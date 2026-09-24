@@ -1,37 +1,41 @@
 :root {
-    --color-navy: #031E4A;
-    --color-primary: #063B80;
-    --color-blue: #0878C9;
-    --color-blue-light: #E6F0F9;
+    /* Theme Colors based on Cleanova Design */
+    --color-navy: #0B1B4D;
+    --color-primary: #0B1B4D;
+    --color-blue: #0B1B4D;
+    --color-blue-light: #EAF0FF;
 
-    --color-green: #65B51B;
-    --color-green-light: #8AC926;
-    --color-green-hover: #529614;
+    --color-green: #6CB836;
+    --color-green-light: #F0F9EA;
+    --color-green-hover: #5DA52D;
 
     --color-white: #FFFFFF;
-    --color-background: #F5F9FC;
-    --color-background-alt: #EDF5FA;
+    --color-background: #F8F9FB;
+    --color-background-alt: #FFFFFF;
 
-    --color-text: #101828;
-    --color-text-muted: #667085;
+    --color-text: #475569;
+    --color-text-muted: #64748B;
 
-    --color-border: #DDE7EF;
+    --color-border: #E2E8F0;
 
-    --shadow-sm: 0 4px 15px rgba(3, 30, 74, 0.06);
-    --shadow-md: 0 10px 35px rgba(3, 30, 74, 0.10);
-    --shadow-lg: 0 20px 45px rgba(3, 30, 74, 0.15);
+    /* Soft drop shadows */
+    --shadow-sm: 0 4px 10px rgba(11, 27, 77, 0.03);
+    --shadow-md: 0 10px 25px rgba(11, 27, 77, 0.06);
+    --shadow-lg: 0 20px 40px rgba(11, 27, 77, 0.08);
 
-    --radius-sm: 10px;
-    --radius-md: 16px;
-    --radius-lg: 24px;
-    --radius-full: 9999px;
+    /* Rounded geometric aesthetic */
+    --radius-sm: 12px;
+    --radius-md: 20px;
+    --radius-lg: 32px;
+    --radius-full: 999px;
     
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
 
-    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    /* Bold, clean typography */
+    --font-primary: 'Poppins', 'Inter', -apple-system, sans-serif;
     
-    --header-height: 80px;
+    --header-height: 90px;
     --header-height-mobile: 70px;
 }

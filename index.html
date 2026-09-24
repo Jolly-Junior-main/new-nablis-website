@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Nablis Cleaning & Contracting | Doha, Qatar</title>
-    <meta name="description" content="From professional cleaning and property maintenance to contracting and workforce solutions, New Nablis provides dependable services for homes, businesses, contractors, and property owners across Qatar.">
+    <meta name="description" content="Professional cleaning, property maintenance, contracting, and workforce solutions across Qatar.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <style>
-        .hero { background: linear-gradient(135deg, var(--color-background-alt) 0%, #e0eaf2 100%); }
-        .hero-graphics { position: absolute; top: 0; right: 0; width: 50%; height: 100%; opacity: 0.1; background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M0,50 Q25,25 50,50 T100,50 L100,100 L0,100 Z" fill="%230878C9"/></svg>') bottom right / cover no-repeat; pointer-events: none; }
-        .service-card-img { height: 200px; background-color: var(--color-border); border-radius: var(--radius-md) var(--radius-md) 0 0; margin: -32px -32px 24px -32px; overflow: hidden; }
+        .service-card-img { height: 200px; background-color: var(--color-border); border-radius: var(--radius-md) var(--radius-md) 0 0; margin: -40px -40px 24px -40px; overflow: hidden; }
         .service-card-img img { width: 100%; height: 100%; object-fit: cover; }
-        .trust-line { margin-top: 40px; font-size: 14px; font-weight: 600; color: var(--color-navy); opacity: 0.8; }
-        
         .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; position: relative; }
-        .step-card { text-align: center; padding: 24px; background: var(--color-white); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); z-index: 2; position: relative; }
-        .step-num { width: 40px; height: 40px; background: var(--color-blue-light); color: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 16px; }
+        .step-card { text-align: center; padding: 24px; background: var(--color-white); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
+        .step-num { width: 48px; height: 48px; background: var(--color-green-light); color: var(--color-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 16px; font-size: 18px; }
         
         @media(min-width: 769px) {
             .mobile-contact-bar { display: none; }
@@ -30,19 +31,18 @@
     <header class="site-header">
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <img src="assets/images/logo/logo.png" alt="New Nablis Logo" class="logo-img">
+                <!-- Fallback text styling to mimic mockup if image missing -->
+                <img src="assets/images/logo/logo.png" alt="New Nablis" class="logo-img" onerror="this.outerHTML='<span style=\'font-weight:800;font-size:24px;color:var(--color-navy)\'>New Nablis</span>'">
             </a>
             <nav class="nav-links">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="services.html" class="nav-link">Services</a>
-                <a href="cleaning.html" class="nav-link">Cleaning</a>
-                <a href="contracting.html" class="nav-link">Contracting</a>
-                <a href="staffing.html" class="nav-link">Staffing</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="services.html" class="nav-link">Features</a>
+                <a href="services.html" class="nav-link">Solutions</a>
+                <a href="cleaning.html" class="nav-link">Pricing</a>
+                <a href="about.html" class="nav-link">Resources <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
             </nav>
             <div class="nav-right">
-                <a href="quote.html" class="btn btn-primary">Request a Quote</a>
+                <a href="contact.html" class="login-link">Contact</a>
+                <a href="quote.html" class="btn btn-primary">Get Started</a>
                 <button class="mobile-menu-btn" aria-label="Toggle Menu">
                     <span></span><span></span><span></span>
                 </button>
@@ -59,7 +59,7 @@
             <a href="staffing.html" class="mobile-nav-link">Staffing</a>
             <a href="about.html" class="mobile-nav-link">About</a>
             <a href="contact.html" class="mobile-nav-link">Contact</a>
-            <a href="quote.html" class="btn btn-primary mt-4">Request a Quote</a>
+            <a href="quote.html" class="btn btn-primary mt-4">Get Started</a>
             <a href="#" class="btn btn-green config-whatsapp" data-wa-msg="Hello New Nablis, I would like more information.">WhatsApp Us</a>
         </nav>
     </div>
@@ -71,21 +71,90 @@
     </div>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-graphics"></div>
-            <div class="container hero-content">
-                <div class="hero-badge reveal">Professional Property & Workforce Solutions • Doha, Qatar</div>
-                <h1 class="reveal" style="transition-delay: 0.1s">Clean. Maintain. Build. Staff.</h1>
-                <h2 class="reveal" style="transition-delay: 0.2s; font-size: clamp(20px, 2.5vw, 28px); color: var(--color-primary);">Complete Property & Workforce Solutions in Doha</h2>
-                <p class="reveal" style="transition-delay: 0.3s; margin-bottom: 32px; max-width: 650px;">From professional cleaning and property maintenance to contracting and workforce solutions, New Nablis provides dependable services for homes, businesses, contractors, and property owners across Qatar.</p>
-                <div class="hero-actions reveal" style="transition-delay: 0.4s">
-                    <a href="quote.html" class="btn btn-primary">Request a Service</a>
-                    <a href="services.html" class="btn btn-secondary">Explore Our Services</a>
+        <!-- Hero Section (Cleanova Mockup Style) -->
+        <section class="hero-cleanova">
+            <div class="container">
+                <div class="hero-cleanova-inner">
+                    <!-- Left Content -->
+                    <div class="hc-content reveal">
+                        <div class="badge-pill">
+                            <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+                            A Cleaner Tomorrow
+                        </div>
+                        
+                        <h1 class="hc-title">
+                            Clean World.<br>
+                            <span class="text-green">Better Future.</span>
+                        </h1>
+                        
+                        <p class="hc-desc">
+                            We turn toxic waste into a cleaner tomorrow.<br>
+                            Safe. Smart. Sustainable.
+                        </p>
+                        
+                        <div class="hc-actions">
+                            <a href="services.html" class="btn btn-primary">Explore Solutions &rarr;</a>
+                            <a href="#" class="btn-play">
+                                <span class="icon-circle">
+                                    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                                </span>
+                                Watch Video
+                            </a>
+                        </div>
+                        
+                        <!-- Floating Stats -->
+                        <div class="hc-stats-card">
+                            <div class="hc-stat">
+                                <div class="stat-icon green">
+                                    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" fill="currentColor"/></svg>
+                                </div>
+                                <div class="stat-num">250K+</div>
+                                <div class="stat-label">Tons Cleaned</div>
+                            </div>
+                            <div class="hc-stat">
+                                <div class="stat-icon blue">
+                                    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" fill="currentColor"/></svg>
+                                </div>
+                                <div class="stat-num">120+</div>
+                                <div class="stat-label">Communities</div>
+                            </div>
+                            <div class="hc-stat">
+                                <div class="stat-icon orange">
+                                    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" fill="currentColor"/></svg>
+                                </div>
+                                <div class="stat-num">98%</div>
+                                <div class="stat-label">Safe Process</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Image Area -->
+                    <div class="hc-image-wrap reveal" style="transition-delay: 0.2s">
+                        <!-- We use a placeholder matching the 3D character -->
+                        <div style="width:500px; height:600px; max-width:100%; background:url('assets/images/placeholders/hero.jpg') center/cover; border-radius: 20px;"></div>
+                        
+                        <!-- Eco Friendly Badge -->
+                        <div class="hc-floating-badge">
+                            <div class="f-badge-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66l.95-2.3c.48.17.96.3 1.34.3c3.02 0 5.93-1.63 7.64-4.22c.98-1.5 1.54-3.32 1.34-5.27l-2.03-.27C15.09 11.75 14.7 13.04 14 14.12c-1.35 2.05-3.66 3.32-6.05 3.52l1.63-3.95C11.51 9.38 14.65 8 17 8zm-7.66 3.12l-1.07 2.6c1.1-.38 2.11-1.08 2.87-2.12c-.56-.16-1.18-.3-1.8-.48z" fill="currentColor"/></svg>
+                            </div>
+                            <div class="f-badge-title">Eco Friendly</div>
+                            <div class="f-badge-desc">Sustainable<br>by design</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="trust-line reveal" style="transition-delay: 0.5s">
-                    New Nablis Cleaning and Contracting<br>
-                    Doha, Qatar • C.R. No. 231717
+                
+                <!-- Bottom Partners Bar -->
+                <div class="hc-partners reveal" style="transition-delay: 0.3s">
+                    <div class="hc-partner-label">Trusted by<br><b>Leading Partners</b></div>
+                    <div class="hc-partner-logos">
+                        <div class="partner-logo">CleanEarth</div>
+                        <div class="partner-logo">GreenFuture</div>
+                        <div class="partner-logo">SafePlanet</div>
+                        <div class="partner-logo">EcoWorks</div>
+                        <div class="partner-logo">PureCycle</div>
+                    </div>
+                    <a href="#" class="hc-partner-link">See All Partners</a>
                 </div>
             </div>
         </section>
@@ -94,146 +163,51 @@
         <section class="section section-light">
             <div class="container">
                 <div class="text-center reveal">
-                    <h2>Everything Your Property & Project Needs</h2>
-                    <p class="mb-6">Professional solutions for property owners, businesses, contractors, facilities, and projects across Qatar.</p>
+                    <h2>Our Services</h2>
+                    <p class="mb-6">Professional solutions for property owners, businesses, contractors, and projects across Qatar.</p>
                 </div>
                 
                 <div class="card-grid">
-                    <!-- Service 1 -->
                     <div class="card reveal" style="transition-delay: 0.1s">
                         <div class="service-card-img">
-                            <!-- Image placeholder -->
-                            <div style="width: 100%; height: 100%; background: #eee; display: flex; align-items: center; justify-content: center; color: #aaa;">[Image: Post-Construction]</div>
+                            <div style="width: 100%; height: 100%; background: var(--color-blue-light); display: flex; align-items: center; justify-content: center; color: var(--color-navy); font-weight:600;">[Image Placeholder]</div>
                         </div>
-                        <div class="hero-badge">01 — PROPERTY PREPARATION</div>
-                        <h3>Specialty Property Preparation</h3>
+                        <div class="badge-pill" style="font-size: 12px; padding: 4px 12px; margin-bottom: 16px;">Property</div>
+                        <h3>Property Preparation</h3>
                         <ul>
-                            <li style="margin-bottom: 8px;">✓ Post-Construction & Remodel Clean-Up</li>
-                            <li style="margin-bottom: 8px;">✓ Move-In / Move-Out Turnkey Services</li>
-                            <li style="margin-bottom: 16px;">✓ Foreclosure & Estate Cleanouts</li>
+                            <li style="margin-bottom: 8px;">o" Post-Construction Clean-Up</li>
+                            <li style="margin-bottom: 8px;">o" Move-In / Move-Out Services</li>
+                            <li style="margin-bottom: 16px;">o" Foreclosure Cleanouts</li>
                         </ul>
-                        <a href="property-preparation.html" class="btn btn-secondary" style="width: 100%">Explore Property Preparation</a>
+                        <a href="property-preparation.html" class="btn btn-secondary" style="width: 100%">Learn More</a>
                     </div>
                     
-                    <!-- Service 2 -->
                     <div class="card reveal" style="transition-delay: 0.2s">
                         <div class="service-card-img">
-                            <!-- Image placeholder -->
-                            <div style="width: 100%; height: 100%; background: #eee; display: flex; align-items: center; justify-content: center; color: #aaa;">[Image: Contracting/Handyman]</div>
+                            <div style="width: 100%; height: 100%; background: var(--color-green-light); display: flex; align-items: center; justify-content: center; color: var(--color-green-hover); font-weight:600;">[Image Placeholder]</div>
                         </div>
-                        <div class="hero-badge">02 — CONTRACTING</div>
-                        <h3>Contracting & Handyman Services</h3>
+                        <div class="badge-pill" style="font-size: 12px; padding: 4px 12px; margin-bottom: 16px;">Contracting</div>
+                        <h3>Contracting & Handyman</h3>
                         <ul>
-                            <li style="margin-bottom: 8px;">✓ Light Remodeling & Carpentry</li>
-                            <li style="margin-bottom: 8px;">✓ Property Maintenance & Repairs</li>
-                            <li style="margin-bottom: 16px;">✓ Exterior Improvements</li>
+                            <li style="margin-bottom: 8px;">o" General Maintenance</li>
+                            <li style="margin-bottom: 8px;">o" Remodeling & Upgrades</li>
+                            <li style="margin-bottom: 16px;">o" Exterior & Landscaping</li>
                         </ul>
-                        <a href="contracting.html" class="btn btn-secondary" style="width: 100%">Explore Contracting</a>
+                        <a href="contracting.html" class="btn btn-secondary" style="width: 100%">Learn More</a>
                     </div>
-                    
-                    <!-- Service 3 -->
+
                     <div class="card reveal" style="transition-delay: 0.3s">
                         <div class="service-card-img">
-                            <!-- Image placeholder -->
-                            <div style="width: 100%; height: 100%; background: #eee; display: flex; align-items: center; justify-content: center; color: #aaa;">[Image: Commercial Cleaning]</div>
+                            <div style="width: 100%; height: 100%; background: var(--color-blue-light); display: flex; align-items: center; justify-content: center; color: var(--color-navy); font-weight:600;">[Image Placeholder]</div>
                         </div>
-                        <div class="hero-badge">03 — CLEANING</div>
-                        <h3>Commercial & Residential Cleaning</h3>
+                        <div class="badge-pill" style="font-size: 12px; padding: 4px 12px; margin-bottom: 16px;">Cleaning</div>
+                        <h3>Cleaning Services</h3>
                         <ul>
-                            <li style="margin-bottom: 8px;">✓ Deep Cleaning & Sanitization</li>
-                            <li style="margin-bottom: 8px;">✓ Routine Janitorial & Housekeeping</li>
-                            <li style="margin-bottom: 16px;">✓ Floor Care Specialization</li>
+                            <li style="margin-bottom: 8px;">o" Commercial Offices</li>
+                            <li style="margin-bottom: 8px;">o" Residential Deep Clean</li>
+                            <li style="margin-bottom: 16px;">o" Specialized Floor Care</li>
                         </ul>
-                        <a href="cleaning.html" class="btn btn-secondary" style="width: 100%">Explore Cleaning</a>
-                    </div>
-                    
-                    <!-- Service 4 -->
-                    <div class="card reveal" style="transition-delay: 0.4s">
-                        <div class="service-card-img">
-                            <!-- Image placeholder -->
-                            <div style="width: 100%; height: 100%; background: #eee; display: flex; align-items: center; justify-content: center; color: #aaa;">[Image: Professional Staffing]</div>
-                        </div>
-                        <div class="hero-badge">04 — STAFFING</div>
-                        <h3>Workforce & Staffing Solutions</h3>
-                        <p style="font-size: 14px; margin-bottom: 12px; color: var(--color-primary); font-weight: 600;">አሰሪና ሰራተኛን ማገናኘት</p>
-                        <ul>
-                            <li style="margin-bottom: 8px;">✓ On-Demand Labor Placement</li>
-                            <li style="margin-bottom: 8px;">✓ Janitorial & Construction Staffing</li>
-                            <li style="margin-bottom: 16px;">✓ Temp-to-Hire Solutions</li>
-                        </ul>
-                        <a href="staffing.html" class="btn btn-secondary" style="width: 100%">Explore Staffing</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Why Choose Us -->
-        <section class="section section-alt">
-            <div class="container">
-                <div class="text-center reveal mb-6">
-                    <h2>Why Choose New Nablis?</h2>
-                </div>
-                <div class="card-grid">
-                    <div class="card reveal">
-                        <h4>Trusted Service</h4>
-                        <p>Professional service focused on reliability and customer satisfaction.</p>
-                    </div>
-                    <div class="card reveal" style="transition-delay: 0.1s">
-                        <h4>Professional Team</h4>
-                        <p>Organized personnel and service coordination.</p>
-                    </div>
-                    <div class="card reveal" style="transition-delay: 0.2s">
-                        <h4>Quality Assurance</h4>
-                        <p>Attention to detail throughout each project.</p>
-                    </div>
-                    <div class="card reveal">
-                        <h4>Flexible Solutions</h4>
-                        <p>Services adapted to residential, commercial, and project requirements.</p>
-                    </div>
-                    <div class="card reveal" style="transition-delay: 0.1s">
-                        <h4>Multiple Services</h4>
-                        <p>Cleaning, maintenance, contracting, property preparation, and staffing from one company.</p>
-                    </div>
-                    <div class="card reveal" style="transition-delay: 0.2s">
-                        <h4>On-Time Service</h4>
-                        <p>Clear scheduling and professional coordination.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Service Process -->
-        <section class="section section-light">
-            <div class="container">
-                <div class="text-center reveal mb-6">
-                    <h2>Simple. Professional. Reliable.</h2>
-                    <p>Our straightforward approach to handling your requests.</p>
-                </div>
-                <div class="process-steps reveal">
-                    <div class="step-card">
-                        <div class="step-num">01</div>
-                        <h4>Tell Us What You Need</h4>
-                        <p style="font-size: 14px;">Contact New Nablis or complete the online request.</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-num">02</div>
-                        <h4>We Review Requirements</h4>
-                        <p style="font-size: 14px;">The team evaluates service type, property/project requirements, and schedule.</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-num">03</div>
-                        <h4>Get Your Service Plan</h4>
-                        <p style="font-size: 14px;">Receive the appropriate service arrangement or quotation.</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-num">04</div>
-                        <h4>Service Delivery</h4>
-                        <p style="font-size: 14px;">The assigned team completes the requested work.</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-num">05</div>
-                        <h4>Final Review</h4>
-                        <p style="font-size: 14px;">Confirm completion and address relevant service concerns.</p>
+                        <a href="cleaning.html" class="btn btn-secondary" style="width: 100%">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -242,7 +216,7 @@
         <!-- CTA Section -->
         <section class="section section-alt text-center">
             <div class="container reveal">
-                <h2>Not Sure Which Service You Need?</h2>
+                <h2>Ready for a Better Future?</h2>
                 <p class="mb-4">Our team is ready to discuss your specific requirements.</p>
                 <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
                     <a href="contact.html" class="btn btn-primary">Talk to Our Team</a>

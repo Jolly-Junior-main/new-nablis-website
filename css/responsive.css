@@ -3,11 +3,36 @@
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
+    
+    .hero-cleanova-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .hc-content {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hc-actions {
+        justify-content: center;
+    }
+    
+    .hc-floating-badge {
+        right: auto;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: 0;
+        top: auto;
+    }
 }
 
 /* Tablet Down */
 @media (max-width: 768px) {
-    .nav-links, .nav-right .btn-primary {
+    .nav-links, .nav-right .btn-primary, .nav-right .login-link {
         display: none; /* Handled by mobile menu */
     }
 
@@ -22,29 +47,37 @@
     }
     
     .logo-img {
-        height: 40px;
+        height: 32px;
     }
 
-    .hero {
-        min-height: auto;
-        padding: 120px 0 60px;
-        text-align: center;
+    .hero-cleanova {
+        padding-top: calc(var(--header-height-mobile) + 30px);
+        padding-bottom: 40px;
     }
 
-    .hero-content {
-        margin: 0 auto;
-    }
-
-    .hero-actions {
-        display: flex;
+    .hc-actions {
         flex-direction: column;
+        width: 100%;
         gap: 16px;
-        align-items: center;
     }
     
-    .hero-actions .btn {
+    .hc-actions .btn {
         width: 100%;
-        max-width: 300px;
+    }
+    
+    .hc-stats-card {
+        flex-direction: column;
+        gap: 24px;
+        width: 100%;
+    }
+
+    .hc-partners {
+        flex-direction: column;
+        padding: 32px 24px;
+        text-align: center;
+    }
+    .hc-partner-logos {
+        flex-wrap: wrap;
     }
 
     .footer-grid {
@@ -127,8 +160,8 @@
     }
     
     .mcb-whatsapp { color: var(--color-green); }
-    .mcb-call { color: var(--color-blue); }
-    .mcb-quote { background: var(--color-primary); color: var(--color-white) !important; }
+    .mcb-call { color: var(--color-navy); }
+    .mcb-quote { background: var(--color-navy); color: var(--color-white) !important; }
 }
 
 /* Reduced Motion */
