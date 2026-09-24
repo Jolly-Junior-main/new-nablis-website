@@ -21,31 +21,32 @@ body {
 
 /* Typography Hierarchy */
 h1, h2, h3, h4, h5, h6 {
-    color: var(--color-navy);
-    line-height: 1.15;
-    font-weight: 800; /* Heavier weight for the specific look */
+    color: var(--color-black);
+    line-height: 1.1;
+    font-weight: 700; 
 }
 
-h1 { font-size: clamp(40px, 5.5vw, 84px); letter-spacing: -0.03em; margin-bottom: 24px; }
-h2 { font-size: clamp(32px, 4.5vw, 56px); letter-spacing: -0.02em; margin-bottom: 20px; }
-h3 { font-size: clamp(24px, 3.5vw, 36px); margin-bottom: 16px; letter-spacing: -0.01em; }
-h4 { font-size: clamp(20px, 2.5vw, 28px); margin-bottom: 12px; }
+h1 { font-size: clamp(48px, 6vw, 80px); letter-spacing: -0.04em; margin-bottom: 24px; }
+h2 { font-size: clamp(36px, 5vw, 56px); letter-spacing: -0.03em; margin-bottom: 20px; }
+h3 { font-size: clamp(24px, 3.5vw, 32px); margin-bottom: 16px; letter-spacing: -0.01em; }
+h4 { font-size: clamp(18px, 2.5vw, 22px); margin-bottom: 12px; }
 
 p {
     margin-bottom: 16px;
     color: var(--color-text-muted);
-    font-size: clamp(16px, 1.5vw, 18px);
+    font-size: clamp(15px, 1.2vw, 16px);
     font-weight: 400;
+    line-height: 1.7;
 }
 
 a {
-    color: var(--color-blue);
+    color: var(--color-black);
     text-decoration: none;
     transition: color var(--transition-fast);
 }
 
 a:hover {
-    color: var(--color-green);
+    color: var(--color-text-muted);
 }
 
 ul, ol {
@@ -60,7 +61,7 @@ img {
 
 .container {
     width: 100%;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -74,7 +75,7 @@ img {
 }
 
 .section-alt {
-    background-color: var(--color-background);
+    background-color: var(--color-background-alt);
 }
 
 /* Utilities */
@@ -82,7 +83,7 @@ img {
 .mt-4 { margin-top: 2rem; }
 .mb-4 { margin-bottom: 2rem; }
 .mb-6 { margin-bottom: 3rem; }
-.text-green { color: var(--color-green) !important; }
+.text-gray { color: var(--color-text-light) !important; }
 
 /* Accessibility */
 .visually-hidden {
@@ -98,7 +99,7 @@ img {
 }
 
 :focus-visible {
-    outline: 3px solid var(--color-green);
+    outline: 2px solid var(--color-black);
     outline-offset: 2px;
 }
 

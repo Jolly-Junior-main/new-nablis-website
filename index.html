@@ -8,7 +8,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/main.css">
@@ -16,33 +16,81 @@
     <link rel="stylesheet" href="css/responsive.css">
     
     <style>
-        .service-card-img { height: 200px; background-color: var(--color-border); border-radius: var(--radius-md) var(--radius-md) 0 0; margin: -40px -40px 24px -40px; overflow: hidden; }
-        .service-card-img img { width: 100%; height: 100%; object-fit: cover; }
-        .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; position: relative; }
-        .step-card { text-align: center; padding: 24px; background: var(--color-white); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); }
-        .step-num { width: 48px; height: 48px; background: var(--color-green-light); color: var(--color-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 16px; font-size: 18px; }
-        
-        @media(min-width: 769px) {
-            .mobile-contact-bar { display: none; }
+        .hero-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 40px;
         }
+        .hero-left h1 {
+            font-size: clamp(48px, 6vw, 72px);
+            margin: 0;
+            line-height: 1.1;
+        }
+        .hero-outline {
+            color: var(--color-text-light);
+            font-weight: 500;
+        }
+        .hero-right-text {
+            max-width: 400px;
+        }
+        .hero-right-text p {
+            margin-bottom: 24px;
+        }
+        
+        .vid-section {
+            width: 100%;
+            height: 400px;
+            background: url('assets/images/placeholders/hero.jpg') center/cover;
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0;
+            position: relative;
+        }
+        .vid-section::before {
+            content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.3); border-radius: inherit;
+        }
+
+        .services-more-block {
+            background: var(--color-black);
+            color: var(--color-white);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        @media(max-width: 900px) {
+            .hero-layout { grid-template-columns: 1fr; }
+            .services-tid { grid-template-columns: 1fr; }
+            .pricing-grid { grid-template-columns: 1fr; }
+            .stats-banner { grid-template-columns: 1fr 1fr; }
+        }
+        @media(min-width: 769px) { .mobile-contact-bar { display: none; } }
     </style>
 </head>
 <body>
     <header class="site-header">
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <!-- Fallback text styling to mimic mockup if image missing -->
-                <img src="assets/images/logo/logo.png" alt="New Nablis" class="logo-img" onerror="this.outerHTML='<span style=\'font-weight:800;font-size:24px;color:var(--color-navy)\'>New Nablis</span>'">
+                <span style="font-weight:800;font-size:24px;color:var(--color-black)">New Nablis.</span>
             </a>
-            <nav class="nav-links">
-                <a href="services.html" class="nav-link">Features</a>
-                <a href="services.html" class="nav-link">Solutions</a>
-                <a href="cleaning.html" class="nav-link">Pricing</a>
-                <a href="about.html" class="nav-link">Resources <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <nav class="nav-links" style="margin-left:auto; margin-right:40px;">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="services.html" class="nav-link">Services <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="quote.html" class="nav-link">Price</a>
+                <a href="contact.html" class="nav-link">Contact</a>
             </nav>
             <div class="nav-right">
-                <a href="contact.html" class="login-link">Contact</a>
-                <a href="quote.html" class="btn btn-primary">Get Started</a>
+                <a href="contact.html" class="btn btn-secondary" style="padding: 10px 24px;">Contact Us</a>
                 <button class="mobile-menu-btn" aria-label="Toggle Menu">
                     <span></span><span></span><span></span>
                 </button>
@@ -54,187 +102,189 @@
         <nav class="mobile-nav-links">
             <a href="index.html" class="mobile-nav-link">Home</a>
             <a href="services.html" class="mobile-nav-link">Services</a>
-            <a href="cleaning.html" class="mobile-nav-link">Cleaning</a>
-            <a href="contracting.html" class="mobile-nav-link">Contracting</a>
-            <a href="staffing.html" class="mobile-nav-link">Staffing</a>
             <a href="about.html" class="mobile-nav-link">About</a>
-            <a href="contact.html" class="mobile-nav-link">Contact</a>
-            <a href="quote.html" class="btn btn-primary mt-4">Get Started</a>
-            <a href="#" class="btn btn-green config-whatsapp" data-wa-msg="Hello New Nablis, I would like more information.">WhatsApp Us</a>
+            <a href="quote.html" class="mobile-nav-link">Price</a>
+            <a href="contact.html" class="mobile-nav-link">Contact Us</a>
         </nav>
     </div>
 
-    <div class="mobile-contact-bar">
-        <a href="#" class="mcb-call config-phone">Call</a>
-        <a href="#" class="mcb-whatsapp config-whatsapp">WhatsApp</a>
-        <a href="quote.html" class="mcb-quote">Get Quote</a>
-    </div>
-
     <main>
-        <!-- Hero Section (Cleanova Mockup Style) -->
-        <section class="hero-cleanova">
+        <!-- Hero Section (Tid Style) -->
+        <section class="hero-tid">
             <div class="container">
-                <div class="hero-cleanova-inner">
-                    <!-- Left Content -->
-                    <div class="hc-content reveal">
-                        <div class="badge-pill">
-                            <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
-                            A Cleaner Tomorrow
-                        </div>
-                        
-                        <h1 class="hc-title">
-                            Clean World.<br>
-                            <span class="text-green">Better Future.</span>
-                        </h1>
-                        
-                        <p class="hc-desc">
-                            We turn toxic waste into a cleaner tomorrow.<br>
-                            Safe. Smart. Sustainable.
-                        </p>
-                        
-                        <div class="hc-actions">
-                            <a href="services.html" class="btn btn-primary">Explore Solutions &rarr;</a>
-                            <a href="#" class="btn-play">
-                                <span class="icon-circle">
-                                    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
-                                </span>
-                                Watch Video
-                            </a>
-                        </div>
-                        
-                        <!-- Floating Stats -->
-                        <div class="hc-stats-card">
-                            <div class="hc-stat">
-                                <div class="stat-icon green">
-                                    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" fill="currentColor"/></svg>
-                                </div>
-                                <div class="stat-num">250K+</div>
-                                <div class="stat-label">Tons Cleaned</div>
-                            </div>
-                            <div class="hc-stat">
-                                <div class="stat-icon blue">
-                                    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" fill="currentColor"/></svg>
-                                </div>
-                                <div class="stat-num">120+</div>
-                                <div class="stat-label">Communities</div>
-                            </div>
-                            <div class="hc-stat">
-                                <div class="stat-icon orange">
-                                    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" fill="currentColor"/></svg>
-                                </div>
-                                <div class="stat-num">98%</div>
-                                <div class="stat-label">Safe Process</div>
-                            </div>
-                        </div>
+                <div class="hero-layout reveal">
+                    <div class="hero-left">
+                        <h1>Property Solutions<br><span class="hero-outline">Meet Excellence</span></h1>
                     </div>
-                    
-                    <!-- Right Image Area -->
-                    <div class="hc-image-wrap reveal" style="transition-delay: 0.2s">
-                        <!-- We use a placeholder matching the 3D character -->
-                        <div style="width:500px; height:600px; max-width:100%; background:url('assets/images/placeholders/hero.jpg') center/cover; border-radius: 20px;"></div>
-                        
-                        <!-- Eco Friendly Badge -->
-                        <div class="hc-floating-badge">
-                            <div class="f-badge-icon">
-                                <svg viewBox="0 0 24 24" width="24" height="24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66l.95-2.3c.48.17.96.3 1.34.3c3.02 0 5.93-1.63 7.64-4.22c.98-1.5 1.54-3.32 1.34-5.27l-2.03-.27C15.09 11.75 14.7 13.04 14 14.12c-1.35 2.05-3.66 3.32-6.05 3.52l1.63-3.95C11.51 9.38 14.65 8 17 8zm-7.66 3.12l-1.07 2.6c1.1-.38 2.11-1.08 2.87-2.12c-.56-.16-1.18-.3-1.8-.48z" fill="currentColor"/></svg>
-                            </div>
-                            <div class="f-badge-title">Eco Friendly</div>
-                            <div class="f-badge-desc">Sustainable<br>by design</div>
+                    <div class="hero-right-text">
+                        <p>Our expert team delivers top-quality property preparation, contracting, and cleaning that's fast, reliable, and tailored to your needs, so your space always looks its best.</p>
+                        <div class="hero-tid-actions">
+                            <a href="quote.html" class="btn btn-primary">Book A Service Now</a>
+                            <a href="#" class="btn btn-secondary config-phone">Call</a>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Bottom Partners Bar -->
-                <div class="hc-partners reveal" style="transition-delay: 0.3s">
-                    <div class="hc-partner-label">Trusted by<br><b>Leading Partners</b></div>
-                    <div class="hc-partner-logos">
-                        <div class="partner-logo">CleanEarth</div>
-                        <div class="partner-logo">GreenFuture</div>
-                        <div class="partner-logo">SafePlanet</div>
-                        <div class="partner-logo">EcoWorks</div>
-                        <div class="partner-logo">PureCycle</div>
+                <div class="hero-tid-image reveal" style="transition-delay: 0.1s">
+                    <div style="width:100%; height:450px; background:url('assets/images/placeholders/hero.jpg') center/cover; border-radius: var(--radius-md);"></div>
+                </div>
+                
+                <div class="stats-banner reveal" style="transition-delay: 0.2s">
+                    <div class="stat-item">
+                        <div class="stat-value">5000+</div>
+                        <div class="stat-name">Spaces Serviced</div>
                     </div>
-                    <a href="#" class="hc-partner-link">See All Partners</a>
+                    <div class="stat-item">
+                        <div class="stat-value">10+</div>
+                        <div class="stat-name">Years Of Trust</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">95%</div>
+                        <div class="stat-name">Repeat Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">4.9+</div>
+                        <div class="stat-name">Average Rating</div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Core Services -->
+        <!-- Services Section (Tid Style) -->
+        <section class="section">
+            <div class="container">
+                <div class="services-tid">
+                    <div class="services-tid-intro reveal">
+                        <div>
+                            <h2 style="font-size: 32px; margin-bottom: 16px;">Excellence Without<br>the Struggle</h2>
+                            <p style="font-size: 14px;">Our expert team delivers top-quality property solutions that are fast, reliable, and fully managed.</p>
+                        </div>
+                        <div>
+                            <a href="quote.html" class="btn btn-primary">Book A Service Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="services-tid-grid reveal" style="transition-delay: 0.1s">
+                        <div class="s-tid-card">
+                            <div class="s-tid-img"></div>
+                            <div class="s-tid-title">01/ Property Preparation</div>
+                        </div>
+                        <div class="s-tid-card">
+                            <div class="s-tid-img"></div>
+                            <div class="s-tid-title">02/ Contracting</div>
+                        </div>
+                        <div class="s-tid-card">
+                            <div class="s-tid-img"></div>
+                            <div class="s-tid-title">03/ Commercial Cleaning</div>
+                        </div>
+                        <div class="services-more-block">
+                            25+ Services You<br>Can Explore
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About/Mission -->
         <section class="section section-light">
             <div class="container">
-                <div class="text-center reveal">
-                    <h2>Our Services</h2>
-                    <p class="mb-6">Professional solutions for property owners, businesses, contractors, and projects across Qatar.</p>
-                </div>
-                
-                <div class="card-grid">
-                    <div class="card reveal" style="transition-delay: 0.1s">
-                        <div class="service-card-img">
-                            <div style="width: 100%; height: 100%; background: var(--color-blue-light); display: flex; align-items: center; justify-content: center; color: var(--color-navy); font-weight:600;">[Image Placeholder]</div>
+                <div class="hero-layout">
+                    <div class="hero-left reveal">
+                        <h2>Elevating Property<br>Excellence</h2>
+                        <p style="margin-bottom: 24px;">At New Nablis, we go beyond basic maintenance. Our mission is to bring you a higher standard of service, where attention to detail, reliability, and safety meet. With trained professionals and trusted methods, we turn everyday spaces into pristine environments.</p>
+                        <div class="hero-tid-actions">
+                            <a href="quote.html" class="btn btn-primary">Book A Service Now</a>
+                            <a href="#" class="btn btn-secondary config-phone">Call</a>
                         </div>
-                        <div class="badge-pill" style="font-size: 12px; padding: 4px 12px; margin-bottom: 16px;">Property</div>
-                        <h3>Property Preparation</h3>
-                        <ul>
-                            <li style="margin-bottom: 8px;">o" Post-Construction Clean-Up</li>
-                            <li style="margin-bottom: 8px;">o" Move-In / Move-Out Services</li>
-                            <li style="margin-bottom: 16px;">o" Foreclosure Cleanouts</li>
-                        </ul>
-                        <a href="property-preparation.html" class="btn btn-secondary" style="width: 100%">Learn More</a>
                     </div>
-                    
-                    <div class="card reveal" style="transition-delay: 0.2s">
-                        <div class="service-card-img">
-                            <div style="width: 100%; height: 100%; background: var(--color-green-light); display: flex; align-items: center; justify-content: center; color: var(--color-green-hover); font-weight:600;">[Image Placeholder]</div>
+                    <div class="hero-right-text reveal" style="position:relative; transition-delay: 0.1s;">
+                        <div style="width:100%; height:300px; background:var(--color-border); border-radius: var(--radius-md);"></div>
+                        <!-- Decorative spinning badge mimic -->
+                        <div style="position: absolute; bottom: -20px; left: -20px; width: 100px; height: 100px; background: var(--color-black); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; text-align: center; font-weight: bold; padding: 10px;">
+                            Work With Us<br>Contact Us
                         </div>
-                        <div class="badge-pill" style="font-size: 12px; padding: 4px 12px; margin-bottom: 16px;">Contracting</div>
-                        <h3>Contracting & Handyman</h3>
-                        <ul>
-                            <li style="margin-bottom: 8px;">o" General Maintenance</li>
-                            <li style="margin-bottom: 8px;">o" Remodeling & Upgrades</li>
-                            <li style="margin-bottom: 16px;">o" Exterior & Landscaping</li>
-                        </ul>
-                        <a href="contracting.html" class="btn btn-secondary" style="width: 100%">Learn More</a>
-                    </div>
-
-                    <div class="card reveal" style="transition-delay: 0.3s">
-                        <div class="service-card-img">
-                            <div style="width: 100%; height: 100%; background: var(--color-blue-light); display: flex; align-items: center; justify-content: center; color: var(--color-navy); font-weight:600;">[Image Placeholder]</div>
-                        </div>
-                        <div class="badge-pill" style="font-size: 12px; padding: 4px 12px; margin-bottom: 16px;">Cleaning</div>
-                        <h3>Cleaning Services</h3>
-                        <ul>
-                            <li style="margin-bottom: 8px;">o" Commercial Offices</li>
-                            <li style="margin-bottom: 8px;">o" Residential Deep Clean</li>
-                            <li style="margin-bottom: 16px;">o" Specialized Floor Care</li>
-                        </ul>
-                        <a href="cleaning.html" class="btn btn-secondary" style="width: 100%">Learn More</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA Section -->
-        <section class="section section-alt text-center">
+        <!-- Pricing Section -->
+        <section class="section">
+            <div class="container">
+                <div style="display:flex; justify-content:space-between; align-items:flex-end;" class="reveal">
+                    <h2>Best Pricing Plan</h2>
+                    <div style="background:var(--color-background-alt); padding:4px; border-radius:var(--radius-full); display:inline-flex;">
+                        <span style="padding:8px 24px; background:var(--color-black); color:white; border-radius:var(--radius-full); font-size:14px; font-weight:600;">Residential</span>
+                        <span style="padding:8px 24px; font-size:14px; font-weight:600;">Business</span>
+                    </div>
+                </div>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card reveal" style="transition-delay: 0.1s">
+                        <h4>Basic Cleaning</h4>
+                        <div class="price-val">QAR 49<span style="font-size:14px; font-weight:400; color:var(--color-text-muted)">/Hour</span></div>
+                        <ul class="pricing-features">
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Standard Service</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Trained Staff</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Flexible Schedule</li>
+                        </ul>
+                        <a href="quote.html" class="btn btn-secondary" style="width:100%">Choose Package</a>
+                    </div>
+                    
+                    <div class="pricing-card highlight reveal" style="transition-delay: 0.2s">
+                        <h4>Deep Cleaning</h4>
+                        <div class="price-val">QAR 69<span style="font-size:14px; font-weight:400; color:rgba(255,255,255,0.7)">/Hour</span></div>
+                        <ul class="pricing-features">
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Intensive Cleaning</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Professional Equipment</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Supervisor Included</li>
+                        </ul>
+                        <a href="quote.html" class="btn btn-secondary" style="width:100%; background:white; border:none; color:black;">Choose Package</a>
+                    </div>
+                    
+                    <div class="pricing-card reveal" style="transition-delay: 0.3s">
+                        <h4>Contracting</h4>
+                        <div class="price-val">Quote</div>
+                        <ul class="pricing-features">
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom Project Plan</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Dedicated Project Manager</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Full Compliance</li>
+                        </ul>
+                        <a href="quote.html" class="btn btn-secondary" style="width:100%">Get Estimate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="section section-light">
+            <div class="container text-center reveal">
+                <h2>Our Best Service<br>Experience</h2>
+                <div class="vid-section">
+                    <a href="#" class="btn-play" style="position:relative; z-index:2;">
+                        <svg viewBox="0 0 24 24" width="24" height="24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA / Equipment Equivalent -->
+        <section class="section section-alt">
             <div class="container reveal">
-                <h2>Ready for a Better Future?</h2>
-                <p class="mb-4">Our team is ready to discuss your specific requirements.</p>
-                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                    <a href="contact.html" class="btn btn-primary">Talk to Our Team</a>
-                    <a href="#" class="btn btn-green config-whatsapp">WhatsApp Us</a>
+                <h2>Ready to start your project?</h2>
+                <div class="mt-4">
+                    <a href="quote.html" class="btn btn-primary">Request a Service</a>
+                    <a href="contact.html" class="btn btn-secondary" style="margin-left: 12px;">Contact Us</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <a href="#" class="whatsapp-float config-whatsapp" aria-label="WhatsApp Us" target="_blank">
-        <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.418-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"/></svg>
-    </a>
-
     <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="assets/images/logo/logo.png" alt="New Nablis Logo" class="footer-logo">
+                    <span style="font-weight:800;font-size:24px;color:var(--color-white);display:block;margin-bottom:24px;">New Nablis.</span>
                     <p style="color: rgba(255,255,255,0.7)">New Nablis Cleaning and Contracting</p>
                     <p style="color: rgba(255,255,255,0.7)">Professional property and workforce solutions in Doha, Qatar.</p>
                 </div>
@@ -253,7 +303,6 @@
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="quote.html">Request Quote</a></li>
-                        <li><a href="worker-registration.html">Worker Registration</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
