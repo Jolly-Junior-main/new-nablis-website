@@ -377,3 +377,9 @@
 .form-label { display: block; margin-bottom: 8px; font-weight: 600; font-size: 14px; }
 .form-control { width: 100%; padding: 14px; border: 1px solid var(--color-border); border-radius: var(--radius-sm); font-family: var(--font-primary); font-size: 14px; background: var(--color-background-alt); }
 .form-control:focus { outline: none; border-color: var(--color-black); background: var(--color-white); }
+
+/* Global Mobile Drawer Hide */
+@media (min-width: 769px) {
+    .mobile-nav-drawer { display: none !important; }
+}
+

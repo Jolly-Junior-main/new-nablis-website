@@ -173,17 +173,18 @@
             font-weight: 600;
             font-size: 18px;
         }
+        @media(min-width: 769px) {
+            .mobile-nav-drawer { display: none !important; }
+        }
     </style>
 </head>
 <body>
-    <header class="site-header">
+    <header class="site-header" style="top:0;">
         <div class="container nav-container">
             
             <div class="logo-container">
                 <a href="index.html" class="logo" style="text-align:center; display:flex; flex-direction:column; align-items:center;">
-                    <img src="assets/images/logo/logo.png" alt="New Nablis Logo" class="logo-img">
-                    <span style="font-weight:800;font-size:16px;color:var(--color-primary)">NEW NABLIS</span>
-                    <span style="font-size:10px; font-weight:600; color:var(--color-text-muted); letter-spacing:2px;">SERVICES</span>
+                    <img src="assets/images/logo/logo.png" alt="New Nablis Logo" class="logo-img" style="height: 64px; margin-bottom: 0;">
                 </a>
             </div>
             
