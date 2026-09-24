@@ -10,13 +10,7 @@
     <link rel="stylesheet" href="css/components.css?v=2">
     <link rel="stylesheet" href="css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        .page-header { padding: 160px 0 80px; background-color: var(--color-background-alt); text-align: center; }
-        .about-content { max-width: 800px; margin: 0 auto; text-align: center; }
-        .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; margin-top: 48px; }
-        .value-card { background: var(--color-white); border-radius: var(--radius-md); padding: 32px 24px; text-align: center; box-shadow: var(--shadow-sm); }
-        .value-card h4 { margin: 0; color: var(--color-primary); }
-    </style>
+    
 </head>
 <body>
         <header class="site-header" style="top:0;">
@@ -67,66 +61,110 @@
         </nav>
     </div>
 
-    <main>
-        <section class="page-header">
-            <div class="container reveal">
-                <h1>Built Around Service. Driven by Quality.</h1>
-                <p style="font-weight: 600; color: var(--color-primary); margin-top: 16px;">
-                    NEW NABLIS CLEANING AND CONTRACTING<br>
-                    Doha, Qatar<br>
-                    C.R. No. 231717
-                </p>
-            </div>
-        </section>
+    
+    <main style="padding-top: calc(var(--header-height) + 60px);">
+        
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <h1 style="font-size: clamp(32px, 5vw, 48px); margin-bottom: 16px;">Built Around Service.<br>Driven by Quality.</h1>
+        </div>
 
-        <!-- Who We Are -->
-        <section class="section section-light">
-            <div class="container reveal about-content">
-                <h2>Who We Are</h2>
-                <p>New Nablis Cleaning and Contracting provides integrated property services, cleaning solutions, maintenance, contracting support, and workforce solutions in Qatar.</p>
-                <p>The company supports residential customers, commercial businesses, property owners, contractors, and project managers.</p>
-            </div>
-        </section>
+        <div class="bento-grid">
+            
+            <!-- Wide Top Card (Who We Are) -->
+            <div class="bento-bezel bento-wide reveal">
+                <div class="bento-inner" style="align-items: center; text-align: center;">
+                    <h2 style="font-size: 28px; margin-bottom: 24px; color: var(--color-white);">Who We Are</h2>
+                    <p style="font-size: 18px; line-height: 1.6; color: #fff; max-width: 800px; margin: 0 auto;">New Nablis Cleaning and Contracting provides integrated property services, cleaning solutions, maintenance, contracting support, and workforce solutions in Qatar.</p>
+                    <p style="font-size: 16px; line-height: 1.6; color: rgba(255,255,255,0.7); max-width: 700px; margin: 16px auto 0;">The company supports residential customers, commercial businesses, property owners, contractors, and project managers.</p>
+                    
+                    <!-- Dotted line mimicking the image -->
+                    <div style="width: 100%; height: 1px; border-top: 2px dashed rgba(255,255,255,0.1); margin: 40px 0;"></div>
+                    
+                    <!-- Values Track -->
+                    <h3 style="font-size: 20px; margin-bottom: 8px;">Core Values Activated</h3>
+                    <p style="color: rgba(255,255,255,0.5); font-size: 14px; margin-bottom: 24px;">The principles guiding our daily operations across the network.</p>
+                    
+                    <div class="bento-mini-track" style="margin-top: 0; width: 100%; padding-bottom: 20px;">
+                        
+                        <div class="bento-mini-card active" style="flex: 1;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            <strong style="font-size: 14px;">Professionalism</strong>
+                            <div style="font-size: 11px; color: var(--color-primary); display: flex; align-items: center; gap: 4px;"><div style="width: 12px; height: 12px; background: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div> Activated</div>
+                        </div>
+                        
+                        <div class="bento-mini-card active" style="flex: 1;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            <strong style="font-size: 14px;">Reliability</strong>
+                            <div style="font-size: 11px; color: var(--color-primary); display: flex; align-items: center; gap: 4px;"><div style="width: 12px; height: 12px; background: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div> Activated</div>
+                        </div>
 
-        <!-- Mission & Vision -->
-        <section class="section section-alt">
-            <div class="container">
-                <div class="about-content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; text-align: left;">
-                    <div class="reveal">
-                        <h2>Our Mission</h2>
-                        <p>To provide dependable property, cleaning, contracting, and workforce solutions through professional service, clear communication, and a commitment to quality.</p>
+                        <div class="bento-mini-card active" style="flex: 1;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <strong style="font-size: 14px;">Quality</strong>
+                            <div style="font-size: 11px; color: var(--color-primary); display: flex; align-items: center; gap: 4px;"><div style="width: 12px; height: 12px; background: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div> Activated</div>
+                        </div>
+
+                        <div class="bento-mini-card active" style="flex: 1;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                            <strong style="font-size: 14px;">Trust</strong>
+                            <div style="font-size: 11px; color: var(--color-primary); display: flex; align-items: center; gap: 4px;"><div style="width: 12px; height: 12px; background: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div> Activated</div>
+                        </div>
                     </div>
-                    <div class="reveal" style="transition-delay: 0.2s;">
-                        <h2>Our Vision</h2>
-                        <p>To become a trusted service partner for homes, businesses, contractors, and property owners throughout Qatar.</p>
+                    
+                    <div style="text-align: center; margin-top: -12px; position: relative; z-index: 2;">
+                        <span style="background: var(--color-white); color: var(--color-bg-base); padding: 6px 20px; border-radius: 999px; font-weight: 600; font-size: 13px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); display: inline-flex; align-items: center; gap: 6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> 6 Values Activated</span>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Values -->
-        <section class="section section-light">
-            <div class="container reveal text-center">
-                <h2>Our Values</h2>
-                <div class="values-grid">
-                    <div class="value-card"><h4>Professionalism</h4></div>
-                    <div class="value-card"><h4>Reliability</h4></div>
-                    <div class="value-card"><h4>Quality</h4></div>
-                    <div class="value-card"><h4>Trust</h4></div>
-                    <div class="value-card"><h4>Responsibility</h4></div>
-                    <div class="value-card"><h4>Customer Care</h4></div>
+            <!-- Square Left Card (Our Mission) mimicking bottom-left -->
+            <div class="bento-bezel reveal" style="transition-delay: 0.1s;">
+                <div class="bento-inner">
+                    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 16px; margin-bottom: 32px;">
+                        <h2 style="font-size: 18px; margin: 0;">Our Mission</h2>
+                        <span style="font-size: 12px; color: var(--color-primary); display: flex; align-items: center; gap: 6px;"><div style="width: 8px; height: 8px; background: var(--color-primary); border-radius: 50%;"></div> Active</span>
+                    </div>
+                    
+                    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; height: calc(100% - 80px);">
+                        <!-- Big Dial UI from bottom-left image -->
+                        <div style="position: relative; width: 140px; height: 140px; display: flex; align-items: center; justify-content: center; margin-bottom: 32px;">
+                            <svg width="140" height="140" viewBox="0 0 100 100" style="position: absolute; inset: 0;">
+                                <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="8"></circle>
+                                <circle cx="50" cy="50" r="40" fill="none" stroke="#3FA9F5" stroke-width="8" stroke-dasharray="251" stroke-dashoffset="60" stroke-linecap="round"></circle>
+                            </svg>
+                            <div style="font-size: 32px; font-weight: 700; color: #fff;">1</div>
+                            <!-- Little pill on side -->
+                            <div style="position: absolute; right: -10px; background: #3FA9F5; padding: 4px 8px; border-radius: 12px; color: white; font-size: 10px; font-weight: bold; border: 2px solid var(--color-bg-base);"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                        </div>
+                        
+                        <p style="color: rgba(255,255,255,0.7); font-size: 15px; max-width: 280px;">To provide dependable property, cleaning, contracting, and workforce solutions through professional service and a commitment to quality.</p>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <!-- CTA Section -->
-        <section class="section section-alt text-center">
-            <div class="container reveal">
-                <h2>Ready to Work With Us?</h2>
-                <a href="contact.html" class="btn btn-primary mt-4">Contact Our Team</a>
+            <!-- Square Right Card (Our Vision) mimicking bottom-right radar -->
+            <div class="bento-bezel reveal" style="transition-delay: 0.2s;">
+                <div class="bento-inner" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    
+                    <div class="radar-circle">
+                        <!-- Points on radar -->
+                        <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: #3FA9F5; padding: 6px; border-radius: 50%; border: 2px solid var(--color-bg-base); z-index: 5;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg></div>
+                        <div style="position: absolute; bottom: 20px; right: -5px; background: var(--color-white); padding: 4px; border-radius: 50%; border: 2px solid var(--color-bg-base); z-index: 5;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg></div>
+                        <div style="position: absolute; top: 30px; left: -10px; background: rgba(255,255,255,0.2); padding: 4px; border-radius: 50%; z-index: 5;"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg></div>
+                        
+                        <div class="radar-core">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                    </div>
+                    
+                    <h2 style="font-size: 18px; margin-bottom: 12px; margin-top: 10px;">Continuous Vision Active</h2>
+                    <p style="color: rgba(255,255,255,0.7); font-size: 15px;">To become a trusted service partner for homes, businesses, contractors, and property owners throughout Qatar.</p>
+                </div>
             </div>
-        </section>
+
+        </div>
     </main>
+
 
     <a href="#" class="whatsapp-float config-whatsapp" aria-label="WhatsApp Us" target="_blank">
         <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.418-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"/></svg>
@@ -192,6 +230,8 @@
 
 </body>
 </html>
+
+
 
 
 
