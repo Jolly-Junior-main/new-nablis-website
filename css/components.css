@@ -72,7 +72,7 @@
     width: 100%;
 }
 
-.logo-img { height: 64px !important; margin-bottom: 0 !important; filter: invert(1) grayscale(1) brightness(1.5) !important; mix-blend-mode: screen !important; }
+.logo-img { height: 60px !important; margin-bottom: 0 !important; }
 
 .nav-links { display: flex; gap: 4px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 6px; border-radius: var(--radius-full); }
 
@@ -303,7 +303,7 @@
     margin-bottom: 64px;
 }
 
-.footer-logo { height: 32px; filter: invert(1) grayscale(1) brightness(1.5); mix-blend-mode: screen; margin-bottom: 24px; }
+.footer-logo { height: 40px; margin-bottom: 24px; background: #ffffff; padding: 12px 24px; border-radius: 999px; }
 
 .footer-col h4 {
     color: var(--color-white);
@@ -365,8 +365,8 @@
 
 
 
-.logo-container { display: flex; align-items: center; justify-content: center; }
-.logo-container .logo-img { height: 64px !important; margin-bottom: 0 !important; filter: invert(1) grayscale(1) brightness(1.5) !important; mix-blend-mode: screen !important; }
+.logo-container { display: flex; align-items: center; justify-content: center; background: #ffffff; padding: 6px 20px; border-radius: 999px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+.logo-container .logo-img { height: 60px !important; margin-bottom: 0 !important; }
 .btn-brand {
     background-color: var(--color-primary);
     color: #ffffff;
@@ -392,8 +392,8 @@
     margin-right: 12px;
 }
 @media(max-width: 900px) {
-    .logo-container { display: flex; align-items: center; justify-content: center; }
-    .logo-container .logo-img { height: 64px !important; margin-bottom: 0 !important; filter: invert(1) grayscale(1) brightness(1.5) !important; mix-blend-mode: screen !important; }
+    .logo-container { display: flex; align-items: center; justify-content: center; background: #ffffff; padding: 6px 20px; border-radius: 999px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+    .logo-container .logo-img { height: 60px !important; margin-bottom: 0 !important; }
 }
 
 
@@ -406,10 +406,11 @@
 
 
 
-.logo-img { height: 64px !important; margin-bottom: 0 !important; filter: invert(1) grayscale(1) brightness(1.5) !important; mix-blend-mode: screen !important; }
+.logo-img { height: 60px !important; margin-bottom: 0 !important; }
 @media(max-width: 900px) {
-    .logo-img { height: 64px !important; margin-bottom: 0 !important; filter: invert(1) grayscale(1) brightness(1.5) !important; mix-blend-mode: screen !important; }
+    .logo-img { height: 60px !important; margin-bottom: 0 !important; }
 }
+
 
 
 
