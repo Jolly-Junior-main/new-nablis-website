@@ -4,29 +4,28 @@
     --color-primary: #6CB836;
     --color-secondary: #0B1B4D;
     
-    /* Pastel Glassmorphism Backgrounds (Matching Picture but Greenish instead of Pink) */
-    --color-bg-base: #9397b9;
-    --color-bg-gradient: 
-        radial-gradient(circle at 10% 90%, #85b078 0%, transparent 60%),
-        radial-gradient(circle at 90% 10%, #a2a0c4 0%, transparent 60%),
-        radial-gradient(circle at 50% 50%, #9094b7 0%, transparent 60%),
-        #9397b9;
+    /* Dim Theme / Glassmorphism Backgrounds */
+    --color-bg-base: #050a15;
+    /* Creating a soft, glowing background using brand colors */
+    --color-bg-gradient: radial-gradient(circle at 15% 50%, rgba(11, 27, 77, 0.6), transparent 50%), 
+                         radial-gradient(circle at 85% 30%, rgba(108, 184, 54, 0.15), transparent 50%),
+                         #050a15;
                          
     /* Glass Properties */
-    --glass-bg: rgba(255, 255, 255, 0.15);
-    --glass-bg-hover: rgba(255, 255, 255, 0.25);
-    --glass-border: rgba(255, 255, 255, 0.3);
-    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-bg-hover: rgba(255, 255, 255, 0.06);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
     
     /* Text */
-    --color-text: #ffffff;
-    --color-text-muted: rgba(255, 255, 255, 0.8);
+    --color-text: #F8FAFC;
+    --color-text-muted: #94A3B8;
     --color-text-light: #ffffff;
     
     /* Legacy fallback vars */
     --color-white: #ffffff;
     --color-black: #050a15;
-    --color-border: rgba(255, 255, 255, 0.2);
+    --color-border: rgba(255, 255, 255, 0.1);
     
     /* Radii */
     --radius-sm: 12px;
@@ -44,7 +43,7 @@
     --transition-slow: 0.5s ease;
     
     /* Shadows */
-    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
     --shadow-md: var(--glass-shadow);
 }
 
