@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/variables.css?v=2">
+    <link rel="stylesheet" href="css/main.css?v=2">
+    <link rel="stylesheet" href="css/components.css?v=2">
     <link rel="stylesheet" href="css/responsive.css">
     
     
@@ -51,7 +51,7 @@
             min-height: 90vh;
             display: flex;
             align-items: center;
-            background: url('assets/images/hero_green_cleaners.jpg') center/cover no-repeat;
+            background: url('assets/images/hero.jpg') center/cover no-repeat;
         }
         
         .hero-overlay-gradient {
@@ -144,7 +144,18 @@
         @media(min-width: 769px) {
             .mobile-nav-drawer { display: none !important; }
         }
-    </style>
+    
+        .hero-full::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(to bottom, transparent 0%, var(--color-bg-base) 100%);
+            z-index: 2;
+        }
+</style>
 </head>
 <body>
         <header class="site-header" style="top:0;">
@@ -398,6 +409,9 @@
 
 </body>
 </html>
+
+
+
 
 
 

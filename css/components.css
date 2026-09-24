@@ -72,10 +72,7 @@
     width: 100%;
 }
 
-.logo-img {
-    height: 32px;
-    width: auto;
-}
+.logo-img { height: 64px !important; margin-bottom: 0 !important; filter: invert(1) grayscale(1) brightness(1.5) !important; mix-blend-mode: screen !important; }
 
 .nav-links { display: flex; gap: 4px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 6px; border-radius: var(--radius-full); }
 
@@ -306,11 +303,7 @@
     margin-bottom: 64px;
 }
 
-.footer-logo {
-    height: 32px;
-    filter: brightness(0) invert(1);
-    margin-bottom: 24px;
-}
+.footer-logo { height: 32px; filter: invert(1) grayscale(1) brightness(1.5); mix-blend-mode: screen; margin-bottom: 24px; }
 
 .footer-col h4 {
     color: var(--color-white);
@@ -373,10 +366,7 @@
 
 
 .logo-container { display: flex; align-items: center; justify-content: center; }
-.logo-container .logo-img {
-    height: 64px;
-    margin-bottom: 0;
-}
+.logo-container .logo-img { height: 64px !important; margin-bottom: 0 !important; filter: invert(1) grayscale(1) brightness(1.5) !important; mix-blend-mode: screen !important; }
 .btn-brand {
     background-color: var(--color-primary);
     color: #ffffff;
@@ -403,7 +393,7 @@
 }
 @media(max-width: 900px) {
     .logo-container { display: flex; align-items: center; justify-content: center; }
-    .logo-container .logo-img { height: 32px; }
+    .logo-container .logo-img { height: 64px !important; margin-bottom: 0 !important; filter: invert(1) grayscale(1) brightness(1.5) !important; mix-blend-mode: screen !important; }
 }
 
 
@@ -416,10 +406,12 @@
 
 
 
-.logo-img { height: 64px !important; margin-bottom: 0 !important; filter: brightness(0) invert(1) !important; }
+.logo-img { height: 64px !important; margin-bottom: 0 !important; filter: invert(1) grayscale(1) brightness(1.5) !important; mix-blend-mode: screen !important; }
 @media(max-width: 900px) {
-    .logo-img { height: 48px !important; }
+    .logo-img { height: 64px !important; margin-bottom: 0 !important; filter: invert(1) grayscale(1) brightness(1.5) !important; mix-blend-mode: screen !important; }
 }
+
+
 
 
 
