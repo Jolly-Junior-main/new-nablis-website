@@ -92,18 +92,30 @@
 
 .nav-links {
     display: flex;
-    gap: 32px;
+    gap: 4px;
     align-items: center;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 999px;
+    padding: 6px;
 }
 
 .nav-link {
-    color: var(--color-text-muted);
-    font-weight: 500;
+    color: var(--color-text);
+    font-weight: 600;
     font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 999px;
+    transition: all 0.3s ease;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover {
+    background: rgba(0, 0, 0, 0.05);
     color: var(--color-black);
+}
+
+.nav-link.active {
+    background: var(--color-green);
+    color: var(--color-black) !important;
 }
 
 .nav-right {
@@ -382,4 +394,5 @@
 @media (min-width: 769px) {
     .mobile-nav-drawer { display: none !important; }
 }
+
 

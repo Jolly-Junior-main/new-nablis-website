@@ -24,12 +24,21 @@
             padding-top: 20px;
             position: absolute; /* so it stays at the top of the hero */
         }
-        .nav-links a {
-            color: var(--color-green) !important;
-            font-weight: 500;
+        .nav-links {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.15);
         }
-        .nav-links a:hover, .nav-links a.active {
-            color: var(--color-blue-light) !important;
+        .nav-links a {
+            color: #ffffff !important;
+            font-weight: 600;
+        }
+        .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: #ffffff !important;
+        }
+        .nav-links a.active {
+            background: var(--color-green);
+            color: var(--color-black) !important;
         }
         
         .logo-container {
