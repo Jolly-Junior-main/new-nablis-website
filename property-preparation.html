@@ -30,11 +30,13 @@
     </style>
 </head>
 <body>
-    <header class="site-header">
+    <header class="site-header" style="top:0;">
         <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="assets/images/logo/logo.png" alt="New Nablis Logo" class="logo-img">
-            </a>
+            <div class="logo-container">
+                <a href="index.html" class="logo" style="text-align:center; display:flex; flex-direction:column; align-items:center;">
+                    <img src="assets/images/logo/logo.png" alt="New Nablis Logo" class="logo-img" style="height: 64px; margin-bottom: 0;">
+                </a>
+            </div>
             <nav class="nav-links">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="services.html" class="nav-link">Services</a>
@@ -43,11 +45,16 @@
                 <a href="staffing.html" class="nav-link">Staffing</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="contact.html" class="nav-link">Contact</a>
-            </nav>
-            <div class="nav-right">
-                <a href="quote.html" class="btn btn-primary">Request a Quote</a>
+                        </nav>
+            <div class="nav-right" style="display:flex; align-items:center;">
+                <button class="search-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#3FA9F5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </button>
+                <a href="quote.html" class="btn-brand">Request a Quote</a>
                 <button class="mobile-menu-btn" aria-label="Toggle Menu">
-                    <span></span><span></span><span></span>
+                    <span style="background:white;"></span>
+                    <span style="background:white;"></span>
+                    <span style="background:white;"></span>
                 </button>
             </div>
         </div>
@@ -211,5 +218,6 @@
 
 </body>
 </html>
+
 
 
