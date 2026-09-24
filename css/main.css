@@ -11,9 +11,11 @@ html {
 }
 
 body {
-    font-family: var(--font-primary);
+    font-family: 'Inter', sans-serif;
     color: var(--color-text);
-    background-color: var(--color-background);
+    background-color: var(--color-bg-base);
+    background-image: var(--color-bg-gradient);
+    background-attachment: fixed;
     line-height: 1.6;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
@@ -21,9 +23,11 @@ body {
 
 /* Typography Hierarchy */
 h1, h2, h3, h4, h5, h6 {
-    color: var(--color-black);
-    line-height: 1.1;
-    font-weight: 700; 
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--color-text-light);
+    line-height: 1.2;
+    margin-bottom: 16px;
+    font-weight: 700;
 }
 
 h1 { font-size: clamp(48px, 6vw, 80px); letter-spacing: -0.04em; margin-bottom: 24px; }
@@ -70,13 +74,9 @@ img {
     padding: 100px 0;
 }
 
-.section-light {
-    background-color: var(--color-white);
-}
+.section-light { background: transparent; }
 
-.section-alt {
-    background-color: var(--color-background-alt);
-}
+.section-alt { background: transparent; }
 
 /* Utilities */
 .text-center { text-align: center; }
@@ -104,5 +104,7 @@ img {
 }
 
 /* Reveal Animations */
+
+
 
 

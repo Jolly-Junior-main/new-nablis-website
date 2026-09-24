@@ -1,43 +1,49 @@
+
 :root {
-    /* Theme Colors based on Logo Branding (Navy & Green) + Tid Minimalist Layout */
-    --color-black: #0B1B4D; /* Replaced Black with Brand Navy */
-    --color-navy: #0B1B4D; 
-    --color-primary: #0B1B4D;
-    --color-blue: #0B1B4D;
-    --color-blue-light: #EAF0FF;
-
-    --color-green: #6CB836; /* Restored Brand Green */
-    --color-green-light: #F0F9EA;
-    --color-green-hover: #5DA52D;
-
-    --color-white: #FFFFFF;
-    --color-background: #FFFFFF;
-    --color-background-alt: #F7F8F9;
-
-    --color-text: #0B1B4D;
-    --color-text-muted: #64748B; /* Slightly blue-tinted gray for harmony */
-    --color-text-light: #94A3B8;
-
-    --color-border: #E2E8F0;
-
-    /* Crisp drop shadows */
-    --shadow-sm: 0 4px 10px rgba(11, 27, 77, 0.04);
-    --shadow-md: 0 10px 30px rgba(11, 27, 77, 0.08);
-    --shadow-lg: 0 20px 50px rgba(11, 27, 77, 0.12);
-
-    /* Rounded aesthetic */
-    --radius-sm: 8px;
-    --radius-md: 16px;
-    --radius-lg: 24px;
-    --radius-full: 999px;
+    /* Core Branding */
+    --color-primary: #6CB836;
+    --color-secondary: #0B1B4D;
     
+    /* Dim Theme / Glassmorphism Backgrounds */
+    --color-bg-base: #050a15;
+    /* Creating a soft, glowing background using brand colors */
+    --color-bg-gradient: radial-gradient(circle at 15% 50%, rgba(11, 27, 77, 0.6), transparent 50%), 
+                         radial-gradient(circle at 85% 30%, rgba(108, 184, 54, 0.15), transparent 50%),
+                         #050a15;
+                         
+    /* Glass Properties */
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-bg-hover: rgba(255, 255, 255, 0.06);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    
+    /* Text */
+    --color-text: #F8FAFC;
+    --color-text-muted: #94A3B8;
+    --color-text-light: #ffffff;
+    
+    /* Legacy fallback vars */
+    --color-white: #ffffff;
+    --color-black: #050a15;
+    --color-border: rgba(255, 255, 255, 0.1);
+    
+    /* Radii */
+    --radius-sm: 12px;
+    --radius-md: 24px;
+    --radius-lg: 32px;
+    --radius-full: 9999px;
+    
+    /* Sizing */
+    --header-height: 90px;
+    --header-height-mobile: 70px;
+    
+    /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
-
-    /* Clean typography */
-    --font-primary: 'Inter', -apple-system, sans-serif;
     
-    --header-height: 90px;
-    --header-height-mobile: 70px;
+    /* Shadows */
+    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    --shadow-md: var(--glass-shadow);
 }
+
