@@ -32,7 +32,7 @@
 
 /* Tablet Down */
 @media (max-width: 768px) {
-    .nav-links, .nav-right .btn-primary, .nav-right .login-link {
+    .nav-links, .nav-right .btn-brand, .nav-right .login-link {
         display: none; /* Handled by mobile menu */
     }
 
@@ -40,7 +40,7 @@
         display: block;
     }
 
-    .site-header { height: var(--header-height-mobile); background-color: rgba(47, 46, 50, 0.95); backdrop-filter: blur(24px); box-shadow: var(--shadow-sm); }
+    .site-header { height: auto; min-height: var(--header-height-mobile); background-color: rgba(47, 46, 50, 0.95) !important; backdrop-filter: blur(24px); box-shadow: var(--shadow-sm); padding: 10px 0; }
     
     .logo-img {
         height: 32px;
@@ -160,4 +160,6 @@
         transition-duration: 0.01ms !important;
     }
 }
+
+
 

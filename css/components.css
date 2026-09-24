@@ -391,10 +391,7 @@
     cursor: pointer;
     margin-right: 12px;
 }
-@media(max-width: 900px) {
-    .logo-container { display: flex; align-items: center; justify-content: center; background: #ffffff; padding: 6px 20px; border-radius: 999px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
-    .logo-container .logo-img { height: 60px !important; margin-bottom: 0 !important; }
-}
+@media(max-width: 900px) { .logo-container { padding: 4px 12px; } .logo-container .logo-img { height: 40px !important; margin-bottom: 0 !important; } }
 
 
 
@@ -407,9 +404,9 @@
 
 
 .logo-img { height: 60px !important; margin-bottom: 0 !important; }
-@media(max-width: 900px) {
-    .logo-img { height: 60px !important; margin-bottom: 0 !important; }
-}
+
+
+
 
 
 
