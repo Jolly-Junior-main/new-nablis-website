@@ -392,3 +392,25 @@ img {
     z-index: 2;
 }
 
+
+/* I18n Styles */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Noto+Sans+Ethiopic:wght@400;600;700;800&display=swap');
+
+body.lang-ar, body.lang-ar *, body.lang-ar h1, body.lang-ar h2, body.lang-ar h3, body.lang-ar p, body.lang-ar a, body.lang-ar span { 
+    font-family: 'Cairo', sans-serif !important; 
+}
+body.lang-am, body.lang-am *, body.lang-am h1, body.lang-am h2, body.lang-am h3, body.lang-am p, body.lang-am a, body.lang-am span { 
+    font-family: 'Noto Sans Ethiopic', sans-serif !important; 
+}
+body.lang-ar { direction: rtl; text-align: right; }
+
+.lang-dropdown:hover .lang-menu { display: block !important; }
+.lang-menu a:hover { background: rgba(255,255,255,0.1); }
+
+/* Hide Google Translate */
+.skiptranslate > iframe.goog-te-banner-frame { display: none !important; }
+body { top: 0px !important; }
+.goog-tooltip { display: none !important; }
+.goog-tooltip:hover { display: none !important; }
+.goog-text-highlight { background-color: transparent !important; border: none !important; box-shadow: none !important; }
+
