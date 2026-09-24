@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Services | New Nablis Cleaning & Contracting</title>
+    <meta name="description" content="Professional commercial and residential cleaning services in Doha, Qatar. Deep cleaning, sanitization, floor care, and routine janitorial services.">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header { padding: 160px 0 80px; background-color: var(--color-background-alt); text-align: center; }
+        .service-detail-section { padding: 80px 0; }
+        .service-detail-row { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-bottom: 80px; }
+        .service-detail-row:last-child { margin-bottom: 0; }
+        .service-detail-row:nth-child(even) { direction: rtl; }
+        .service-detail-row:nth-child(even) > * { direction: ltr; }
+        .service-image { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); height: 400px; background: #eee; display: flex; align-items: center; justify-content: center; }
+        .check-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 24px 0; }
+        .check-list li { color: var(--color-text-muted); }
+        .check-list li::before { content: "✓"; color: var(--color-primary); font-weight: bold; margin-right: 8px; }
+        @media(max-width: 768px) {
+            .service-detail-row { grid-template-columns: 1fr; gap: 32px; }
+            .service-detail-row:nth-child(even) { direction: ltr; }
+            .service-image { height: 250px; }
+            .check-list { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo/logo.png" alt="New Nablis Logo" class="logo-img">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="cleaning.html" class="nav-link active">Cleaning</a>
+                <a href="contracting.html" class="nav-link">Contracting</a>
+                <a href="staffing.html" class="nav-link">Staffing</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-right">
+                <a href="quote.html" class="btn btn-primary">Request a Quote</a>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav-drawer">
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="services.html" class="mobile-nav-link">Services</a>
+            <a href="cleaning.html" class="mobile-nav-link">Cleaning</a>
+            <a href="contracting.html" class="mobile-nav-link">Contracting</a>
+            <a href="staffing.html" class="mobile-nav-link">Staffing</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+            <a href="quote.html" class="btn btn-primary mt-4">Request a Quote</a>
+            <a href="#" class="btn btn-green config-whatsapp" data-wa-msg="Hello New Nablis, I would like more information.">WhatsApp Us</a>
+        </nav>
+    </div>
+
+    <div class="mobile-contact-bar">
+        <a href="#" class="mcb-call config-phone">Call</a>
+        <a href="#" class="mcb-whatsapp config-whatsapp">WhatsApp</a>
+        <a href="quote.html" class="mcb-quote">Get Quote</a>
+    </div>
+
+    <main>
+        <section class="page-header">
+            <div class="container reveal">
+                <h1>A Cleaner Space. A Better Environment.</h1>
+                <p style="max-width: 700px; margin: 0 auto;">Premium professional cleaning and janitorial services for properties across Qatar.</p>
+            </div>
+        </section>
+
+        <section class="service-detail-section section-light">
+            <div class="container">
+                <!-- Deep Cleaning -->
+                <div class="service-detail-row reveal">
+                    <div>
+                        <h2>Deep Cleaning & Sanitization</h2>
+                        <p>Comprehensive deep cleaning services to eliminate dirt and ensure a healthy, sanitized environment.</p>
+                        <ul class="check-list">
+                            <li>Kitchen deep cleaning</li>
+                            <li>Bathroom deep cleaning</li>
+                            <li>Detailed grout cleaning</li>
+                            <li>Interior window cleaning</li>
+                            <li>Exterior window cleaning where applicable</li>
+                            <li>Wall washing</li>
+                            <li>Detailed surface cleaning</li>
+                        </ul>
+                    </div>
+                    <div class="service-image">
+                        <div style="color: #aaa;">[Image: Deep Cleaning]</div>
+                    </div>
+                </div>
+
+                <!-- Routine Janitorial -->
+                <div class="service-detail-row reveal">
+                    <div>
+                        <h2>Routine Janitorial & Housekeeping</h2>
+                        <p>Consistent, high-quality cleaning for offices, retail locations, commercial facilities, and private homes.</p>
+                        <ul class="check-list">
+                            <li>Surface cleaning</li>
+                            <li>Vacuuming</li>
+                            <li>Mopping</li>
+                            <li>Dusting</li>
+                            <li>Trash removal</li>
+                            <li>Routine maintenance cleaning</li>
+                        </ul>
+                    </div>
+                    <div class="service-image">
+                        <div style="color: #aaa;">[Image: Routine Janitorial]</div>
+                    </div>
+                </div>
+
+                <!-- Floor Care -->
+                <div class="service-detail-row reveal">
+                    <div>
+                        <h2>Floor Care Specialization</h2>
+                        <p>Expert floor care to maintain the appearance and longevity of your carpets and hard surfaces.</p>
+                        <ul class="check-list">
+                            <li>Carpet deep cleaning</li>
+                            <li>Floor stripping</li>
+                            <li>Waxing</li>
+                            <li>Polishing</li>
+                            <li>Tile care</li>
+                            <li>Hardwood care</li>
+                            <li>Vinyl floor care</li>
+                        </ul>
+                        <a href="quote.html?service=cleaning" class="btn btn-primary mt-4">Request Cleaning Service</a>
+                    </div>
+                    <div class="service-image">
+                        <div style="color: #aaa;">[Image: Floor Care]</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section section-alt text-center">
+            <div class="container reveal">
+                <h2>Need Professional Cleaning?</h2>
+                <p class="mb-4">Get a customized cleaning plan tailored to your property.</p>
+                <a href="quote.html?service=cleaning" class="btn btn-primary">Request Cleaning</a>
+            </div>
+        </section>
+    </main>
+
+    <a href="#" class="whatsapp-float config-whatsapp" aria-label="WhatsApp Us" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.418-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"/></svg>
+    </a>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/images/logo/logo.png" alt="New Nablis Logo" class="footer-logo">
+                    <p style="color: rgba(255,255,255,0.7)">New Nablis Cleaning and Contracting</p>
+                    <p style="color: rgba(255,255,255,0.7)">Professional property and workforce solutions in Doha, Qatar.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>SERVICES</h4>
+                    <ul class="footer-links">
+                        <li><a href="cleaning.html">Cleaning</a></li>
+                        <li><a href="property-preparation.html">Property Preparation</a></li>
+                        <li><a href="contracting.html">Contracting</a></li>
+                        <li><a href="staffing.html">Staffing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>COMPANY</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="quote.html">Request Quote</a></li>
+                        <li><a href="worker-registration.html">Worker Registration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACT</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="config-phone">Phone</a></li>
+                        <li><a href="#" class="config-whatsapp">WhatsApp</a></li>
+                        <li><a href="#" class="config-email">Email</a></li>
+                        <li style="color: rgba(255,255,255,0.7)">Doha, Qatar</li>
+                        <li style="color: rgba(255,255,255,0.7)">C.R. No. 231717</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; <span id="year"></span> New Nablis Cleaning and Contracting. All Rights Reserved.</div>
+                <div class="footer-legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/animations.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

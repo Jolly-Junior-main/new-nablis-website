@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | New Nablis Cleaning & Contracting</title>
+    <meta name="description" content="Explore our complete range of professional services: property preparation, contracting, cleaning, and staffing solutions in Doha, Qatar.">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header { padding: 160px 0 80px; background-color: var(--color-background-alt); text-align: center; }
+        .services-list { display: flex; flex-direction: column; gap: 80px; padding: 80px 0; }
+        .service-row { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+        .service-row:nth-child(even) { direction: rtl; }
+        .service-row:nth-child(even) > * { direction: ltr; }
+        .service-image { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); height: 400px; background: #eee; display: flex; align-items: center; justify-content: center; }
+        @media(max-width: 768px) {
+            .service-row { grid-template-columns: 1fr; gap: 32px; }
+            .service-row:nth-child(even) { direction: ltr; }
+            .service-image { height: 250px; }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo/logo.png" alt="New Nablis Logo" class="logo-img">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="cleaning.html" class="nav-link">Cleaning</a>
+                <a href="contracting.html" class="nav-link">Contracting</a>
+                <a href="staffing.html" class="nav-link">Staffing</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-right">
+                <a href="quote.html" class="btn btn-primary">Request a Quote</a>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav-drawer">
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="services.html" class="mobile-nav-link">Services</a>
+            <a href="cleaning.html" class="mobile-nav-link">Cleaning</a>
+            <a href="contracting.html" class="mobile-nav-link">Contracting</a>
+            <a href="staffing.html" class="mobile-nav-link">Staffing</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+            <a href="quote.html" class="btn btn-primary mt-4">Request a Quote</a>
+            <a href="#" class="btn btn-green config-whatsapp" data-wa-msg="Hello New Nablis, I would like more information.">WhatsApp Us</a>
+        </nav>
+    </div>
+
+    <div class="mobile-contact-bar">
+        <a href="#" class="mcb-call config-phone">Call</a>
+        <a href="#" class="mcb-whatsapp config-whatsapp">WhatsApp</a>
+        <a href="quote.html" class="mcb-quote">Get Quote</a>
+    </div>
+
+    <main>
+        <section class="page-header">
+            <div class="container reveal">
+                <h1>Our Services</h1>
+                <p style="max-width: 600px; margin: 0 auto;">Comprehensive property and workforce solutions tailored for residential, commercial, and contracting clients in Qatar.</p>
+            </div>
+        </section>
+
+        <section class="section section-light">
+            <div class="container services-list">
+                <!-- Service 1 -->
+                <div class="service-row reveal">
+                    <div class="service-content">
+                        <div class="hero-badge">01</div>
+                        <h2>Property Preparation</h2>
+                        <p>Specialized property preparation for residential and commercial properties. From construction to completion.</p>
+                        <ul style="margin-bottom: 24px; color: var(--color-text-muted);">
+                            <li style="margin-bottom: 8px;">✓ Post-Construction & Remodel Clean-Up</li>
+                            <li style="margin-bottom: 8px;">✓ Move-In / Move-Out Turnkey Services</li>
+                            <li style="margin-bottom: 8px;">✓ Foreclosure & Estate Cleanouts</li>
+                        </ul>
+                        <a href="property-preparation.html" class="btn btn-secondary">Explore Property Preparation</a>
+                    </div>
+                    <div class="service-image">
+                        <div style="color: #aaa;">[Image: Property Preparation]</div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-row reveal">
+                    <div class="service-content">
+                        <div class="hero-badge">02</div>
+                        <h2>Contracting Services</h2>
+                        <p>Reliable repairs and professional results for property maintenance and improvements.</p>
+                        <ul style="margin-bottom: 24px; color: var(--color-text-muted);">
+                            <li style="margin-bottom: 8px;">✓ Light Remodeling & Carpentry</li>
+                            <li style="margin-bottom: 8px;">✓ Property Maintenance & Repairs</li>
+                            <li style="margin-bottom: 8px;">✓ Exterior Improvements</li>
+                        </ul>
+                        <a href="contracting.html" class="btn btn-secondary">Explore Contracting</a>
+                    </div>
+                    <div class="service-image">
+                        <div style="color: #aaa;">[Image: Contracting]</div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-row reveal">
+                    <div class="service-content">
+                        <div class="hero-badge">03</div>
+                        <h2>Cleaning Services</h2>
+                        <p>A cleaner space and a better environment for homes, offices, and commercial facilities.</p>
+                        <ul style="margin-bottom: 24px; color: var(--color-text-muted);">
+                            <li style="margin-bottom: 8px;">✓ Deep Cleaning & Sanitization</li>
+                            <li style="margin-bottom: 8px;">✓ Routine Janitorial & Housekeeping</li>
+                            <li style="margin-bottom: 8px;">✓ Floor Care Specialization</li>
+                        </ul>
+                        <a href="cleaning.html" class="btn btn-secondary">Explore Cleaning</a>
+                    </div>
+                    <div class="service-image">
+                        <div style="color: #aaa;">[Image: Cleaning]</div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-row reveal">
+                    <div class="service-content">
+                        <div class="hero-badge">04</div>
+                        <h2>Workforce & Staffing</h2>
+                        <p>The right people. The right skills. When you need them. Connect with workers for temporary or project-based assignments.</p>
+                        <ul style="margin-bottom: 24px; color: var(--color-text-muted);">
+                            <li style="margin-bottom: 8px;">✓ On-Demand Labor Placement</li>
+                            <li style="margin-bottom: 8px;">✓ Janitorial & Construction Staffing</li>
+                            <li style="margin-bottom: 8px;">✓ Temp-to-Hire Solutions</li>
+                        </ul>
+                        <a href="staffing.html" class="btn btn-secondary">Explore Staffing</a>
+                    </div>
+                    <div class="service-image">
+                        <div style="color: #aaa;">[Image: Staffing]</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section section-alt text-center">
+            <div class="container reveal">
+                <h2>Not Sure Which Service You Need?</h2>
+                <a href="contact.html" class="btn btn-primary mt-4">Talk to Our Team</a>
+            </div>
+        </section>
+    </main>
+
+    <a href="#" class="whatsapp-float config-whatsapp" aria-label="WhatsApp Us" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.418-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"/></svg>
+    </a>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/images/logo/logo.png" alt="New Nablis Logo" class="footer-logo">
+                    <p style="color: rgba(255,255,255,0.7)">New Nablis Cleaning and Contracting</p>
+                    <p style="color: rgba(255,255,255,0.7)">Professional property and workforce solutions in Doha, Qatar.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>SERVICES</h4>
+                    <ul class="footer-links">
+                        <li><a href="cleaning.html">Cleaning</a></li>
+                        <li><a href="property-preparation.html">Property Preparation</a></li>
+                        <li><a href="contracting.html">Contracting</a></li>
+                        <li><a href="staffing.html">Staffing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>COMPANY</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="quote.html">Request Quote</a></li>
+                        <li><a href="worker-registration.html">Worker Registration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACT</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="config-phone">Phone</a></li>
+                        <li><a href="#" class="config-whatsapp">WhatsApp</a></li>
+                        <li><a href="#" class="config-email">Email</a></li>
+                        <li style="color: rgba(255,255,255,0.7)">Doha, Qatar</li>
+                        <li style="color: rgba(255,255,255,0.7)">C.R. No. 231717</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; <span id="year"></span> New Nablis Cleaning and Contracting. All Rights Reserved.</div>
+                <div class="footer-legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/animations.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
