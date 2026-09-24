@@ -1,31 +1,31 @@
 :root {
-    /* Theme Colors based on the "Tid" Minimalist Design */
-    --color-black: #111111;
-    --color-navy: #111111; /* Mapped to black for compatibility */
-    --color-primary: #111111;
-    --color-blue: #111111;
-    --color-blue-light: #f5f5f5;
+    /* Theme Colors based on Logo Branding (Navy & Green) + Tid Minimalist Layout */
+    --color-black: #0B1B4D; /* Replaced Black with Brand Navy */
+    --color-navy: #0B1B4D; 
+    --color-primary: #0B1B4D;
+    --color-blue: #0B1B4D;
+    --color-blue-light: #EAF0FF;
 
-    --color-green: #111111; /* Replacing green with black for this theme */
-    --color-green-light: #f5f5f5;
-    --color-green-hover: #333333;
+    --color-green: #6CB836; /* Restored Brand Green */
+    --color-green-light: #F0F9EA;
+    --color-green-hover: #5DA52D;
 
     --color-white: #FFFFFF;
     --color-background: #FFFFFF;
-    --color-background-alt: #F7F8F9; /* Very light gray for sections */
+    --color-background-alt: #F7F8F9;
 
-    --color-text: #111111;
-    --color-text-muted: #666666;
-    --color-text-light: #999999;
+    --color-text: #0B1B4D;
+    --color-text-muted: #64748B; /* Slightly blue-tinted gray for harmony */
+    --color-text-light: #94A3B8;
 
-    --color-border: #EEEEEE;
+    --color-border: #E2E8F0;
 
     /* Crisp drop shadows */
-    --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.04);
-    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
-    --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.12);
+    --shadow-sm: 0 4px 10px rgba(11, 27, 77, 0.04);
+    --shadow-md: 0 10px 30px rgba(11, 27, 77, 0.08);
+    --shadow-lg: 0 20px 50px rgba(11, 27, 77, 0.12);
 
-    /* Rounded aesthetic but sharper than previous */
+    /* Rounded aesthetic */
     --radius-sm: 8px;
     --radius-md: 16px;
     --radius-lg: 24px;
