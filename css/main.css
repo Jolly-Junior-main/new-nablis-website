@@ -44,7 +44,7 @@ p {
 }
 
 a {
-    color: var(--color-black);
+    color: var(--color-text-light);
     text-decoration: none;
     transition: color var(--transition-fast);
 }
@@ -104,6 +104,8 @@ img {
 }
 
 /* Reveal Animations */
+
+
 
 
 

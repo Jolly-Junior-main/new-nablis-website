@@ -4,30 +4,27 @@
     --color-primary: #6CB836;
     --color-secondary: #0B1B4D;
     
-    /* Exact Pastel Glassmorphism Background (Matching Picture but Greenish instead of Pink) */
-    --color-bg-base: #b3b0d1;
-    --color-bg-gradient: 
-        radial-gradient(circle at 0% 0%, #c4c3dd 0%, transparent 60%),
-        radial-gradient(circle at 100% 0%, #c5abc3 0%, transparent 60%),
-        radial-gradient(circle at 100% 100%, #a7a8ce 0%, transparent 60%),
-        radial-gradient(circle at 0% 100%, #a9d1ac 0%, transparent 60%),
-        #b3b0d1;
+    /* Dark Ambient Dashboard Theme */
+    --color-bg-base: #2f2e32;
+    --color-bg-gradient: radial-gradient(circle at 10% 10%, #5a4f55 0%, transparent 60%),
+                         radial-gradient(circle at 90% 90%, #3e3e4a 0%, transparent 60%),
+                         radial-gradient(circle at 50% 50%, #353438 0%, transparent 60%);
                          
-    /* Exact Glass Properties from Image */
-    --glass-bg: rgba(255, 255, 255, 0.15);
-    --glass-bg-hover: rgba(255, 255, 255, 0.25);
-    --glass-border: rgba(255, 255, 255, 0.3);
-    --glass-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    /* Glass Properties */
+    --glass-bg: rgba(40, 40, 45, 0.6);
+    --glass-bg-hover: rgba(50, 50, 55, 0.8);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     
     /* Text */
-    --color-text: #ffffff;
-    --color-text-muted: rgba(255, 255, 255, 0.8);
+    --color-text: rgba(255,255,255,0.8);
+    --color-text-muted: rgba(255,255,255,0.5);
     --color-text-light: #ffffff;
     
     /* Legacy fallback vars */
     --color-white: #ffffff;
-    --color-black: #050a15;
-    --color-border: rgba(255, 255, 255, 0.2);
+    --color-black: #1a1a1a;
+    --color-border: rgba(255, 255, 255, 0.1);
     
     /* Radii */
     --radius-sm: 12px;
@@ -45,7 +42,7 @@
     --transition-slow: 0.5s ease;
     
     /* Shadows */
-    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-md: var(--glass-shadow);
 }
 
