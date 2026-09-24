@@ -16,6 +16,135 @@
     <link rel="stylesheet" href="css/responsive.css">
     
     
+
+    <style>
+        .btn-brand {
+            background-color: var(--color-primary);
+            color: #ffffff;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 999px;
+            font-weight: 600;
+        }
+        .btn-brand:hover {
+            background-color: #559e2b;
+            color: #ffffff;
+        }
+        
+        .btn-outline-white {
+            background-color: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            padding: 12px 28px;
+            border-radius: 999px;
+            font-weight: 600;
+        }
+        .btn-outline-white:hover {
+            background-color: #ffffff;
+            color: var(--color-bg-base);
+        }
+
+        /* Hero Full Width Layout */
+        .hero-full {
+            position: relative;
+            width: 100%;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            background: url('assets/images/hero_green_cleaners.jpg') center/cover no-repeat;
+        }
+        
+        .hero-overlay-gradient {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 70%, transparent 100%);
+            z-index: 1;
+        }
+        
+        .hero-full-content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            padding-top: 80px; /* space for header */
+        }
+        
+        .hero-title-text {
+            color: #ffffff;
+            font-size: clamp(48px, 6vw, 72px);
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+        
+        .hero-subtitle-text {
+            color: #e2e8f0;
+            font-size: clamp(16px, 1.5vw, 20px);
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .hero-full-actions {
+            display: flex;
+            gap: 16px;
+        }
+
+        .search-icon {
+            background: #ffffff;
+            border: none;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin-right: 12px;
+        }
+
+        @media(max-width: 900px) {
+            .hero-overlay-gradient { width: 100%; background: rgba(0,0,0,0.7); }
+            .services-tid { grid-template-columns: 1fr; }
+            .pricing-grid { grid-template-columns: 1fr; }
+        }
+        
+        .vid-section {
+            width: 100%;
+            height: 400px;
+            background: url('assets/images/commercial_cleaning.jpg') center/cover;
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0;
+            position: relative;
+        }
+        .vid-section::before {
+            content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.3); border-radius: inherit;
+        }
+
+        .services-more-block {
+            background: var(--glass-bg);
+            color: var(--color-white);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        @media(min-width: 769px) {
+            .mobile-nav-drawer { display: none !important; }
+        }
+    </style>
 </head>
 <body>
         <header class="site-header" style="top:0;">
@@ -269,6 +398,7 @@
 
 </body>
 </html>
+
 
 
 

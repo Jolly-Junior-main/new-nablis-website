@@ -40,11 +40,7 @@
         display: block;
     }
 
-    .site-header {
-        height: var(--header-height-mobile);
-        background-color: var(--color-white); /* Always solid on mobile */
-        box-shadow: var(--shadow-sm);
-    }
+    .site-header { height: var(--header-height-mobile); background-color: rgba(47, 46, 50, 0.95); backdrop-filter: blur(24px); box-shadow: var(--shadow-sm); }
     
     .logo-img {
         height: 32px;
@@ -92,13 +88,7 @@
     }
 
     /* Mobile Menu Drawer */
-    .mobile-nav-drawer {
-        position: fixed;
-        top: var(--header-height-mobile);
-        left: 0;
-        width: 100%;
-        height: calc(100vh - var(--header-height-mobile));
-        background-color: var(--color-white);
+    .mobile-nav-drawer { position: fixed; top: var(--header-height-mobile); left: 0; width: 100%; height: calc(100vh - var(--header-height-mobile)); background-color: rgba(47, 46, 50, 0.95); backdrop-filter: blur(24px);
         z-index: 999;
         transform: translateX(100%);
         transition: transform var(--transition-normal);
@@ -119,12 +109,7 @@
         margin-bottom: 40px;
     }
 
-    .mobile-nav-link {
-        font-size: 20px;
-        font-weight: 600;
-        color: var(--color-navy);
-        text-decoration: none;
-    }
+    .mobile-nav-link { font-size: 20px; font-weight: 600; color: #ffffff; text-decoration: none; }
 
     body.menu-open {
         overflow: hidden;
@@ -175,3 +160,4 @@
         transition-duration: 0.01ms !important;
     }
 }
+
