@@ -52,7 +52,7 @@
 /* Header & Nav */
 .site-header { position: fixed; top: 0; left: 0; width: 100%; padding-top: 20px; padding-bottom: 10px; z-index: 1000; transition: var(--transition-normal); background: transparent; }
 
-.site-header.scrolled { background: rgba(47, 46, 50, 0.8) !important; backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border-bottom: 1px solid rgba(255,255,255,0.05); padding-top: 10px; box-shadow: var(--shadow-sm); }
+.site-header.scrolled { background: var(--glass-bg) !important; backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border-bottom: 1px solid rgba(255,255,255,0.05); padding-top: 10px; box-shadow: var(--shadow-sm); }
 
 .nav-container {
     display: flex;
@@ -433,6 +433,7 @@
 
 
 option { background: var(--color-bg-base); color: var(--color-text-light); }
+
 
 
 
