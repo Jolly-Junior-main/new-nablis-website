@@ -342,10 +342,11 @@ body::before {
 }
 
 @media (max-width: 768px) {
-    .bento-grid { padding: 0 16px 40px; gap: 16px; }
-    .bento-bezel { padding: 8px; border-radius: 24px; }
-    .bento-inner { padding: 24px 16px; border-radius: 16px; }
+    .bento-grid { padding: 0 16px 40px; gap: 16px; width: 100%; max-width: 100vw; overflow-x: hidden; }
+    .bento-bezel { padding: 8px; border-radius: 24px; min-width: 0; width: 100%; max-width: 100%; }
+    .bento-inner { padding: 24px 16px; border-radius: 16px; min-width: 0; width: 100%; max-width: 100%; }
     .bento-mini-card { min-width: 140px; padding: 16px; }
+    .bento-mini-track { min-width: 0; width: 100%; }
 }
 
 .bento-mini-track {
@@ -466,6 +467,8 @@ body::before {
     gap: 24px;
     align-items: center;
 }
+
+
 
 
 
