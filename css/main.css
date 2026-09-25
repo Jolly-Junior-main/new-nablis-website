@@ -6,7 +6,6 @@
 }
 
 html {
-    scroll-behavior: smooth;
     font-size: 16px;
 }
 
@@ -15,7 +14,6 @@ body {
     color: var(--color-text);
     background-color: var(--color-bg-base);
     line-height: 1.6;
-    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -24,8 +22,8 @@ body::before {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: var(--color-bg-base);
     background-image: var(--color-bg-gradient);
     z-index: -9999;
@@ -244,7 +242,6 @@ img {
     color: var(--color-text);
     background-color: var(--color-bg-base);
     line-height: 1.6;
-    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -253,8 +250,8 @@ body::before {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: var(--color-bg-base);
     background-image: var(--color-bg-gradient);
     z-index: -9999;
@@ -443,7 +440,6 @@ body {
     color: var(--color-text);
     background-color: var(--color-bg-base);
     line-height: 1.6;
-    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -452,8 +448,8 @@ body::before {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: var(--color-bg-base);
     background-image: var(--color-bg-gradient);
     z-index: -9999;
@@ -470,5 +466,7 @@ body::before {
     gap: 24px;
     align-items: center;
 }
+
+
 
 
