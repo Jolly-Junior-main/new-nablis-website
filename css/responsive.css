@@ -107,7 +107,7 @@
         margin-bottom: 40px;
     }
 
-    .mobile-nav-link { font-size: 20px; font-weight: 600; color: #ffffff; text-decoration: none; }
+    .mobile-nav-link { font-size: 20px; font-weight: 600; color: var(--color-text-light); text-decoration: none; }
 
     body.menu-open {
         overflow: hidden;
