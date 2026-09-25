@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | New Nablis Cleaning & Contracting</title>
     <meta name="description" content="Learn about New Nablis Cleaning and Contracting, a professional service company providing integrated property and workforce solutions in Doha, Qatar.">
-    <link rel="stylesheet" href="css/variables.css?v=3">
-    <link rel="stylesheet" href="css/main.css?v=4">
-    <link rel="stylesheet" href="css/components.css?v=3">
-    <link rel="stylesheet" href="css/responsive.css?v=3">
+    <link rel="stylesheet" href="css/variables.css?v=5">
+    <link rel="stylesheet" href="css/main.css?v=5">
+    <link rel="stylesheet" href="css/components.css?v=5">
+    <link rel="stylesheet" href="css/responsive.css?v=5">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
 </head>
@@ -30,15 +30,19 @@
 
 <div class="nav-right" style="display:flex; align-items:center; gap: 12px;">
     <!-- Language Dropdown -->
-    <div class="lang-dropdown" style="position: relative;">
-        <button class="lang-btn" style="background: transparent; border: 1px solid rgba(255,255,255,0.2); color: white; padding: 6px 12px; border-radius: 20px; display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 13px; font-weight: 600;">
+    <button class="theme-toggle" aria-label="Toggle Theme" style="background: transparent; border: 1px solid var(--glass-border); color: var(--color-text-light); padding: 6px 12px; border-radius: 20px; display: flex; align-items: center; justify-content: center; cursor: pointer;" onclick="toggleTheme()">
+              <svg class="sun-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+              <svg class="moon-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+          <div class="lang-dropdown" style="position: relative;">
+        <button class="lang-btn" style="background: transparent; border: 1px solid var(--glass-border); color: var(--color-text-light); padding: 6px 12px; border-radius: 20px; display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 13px; font-weight: 600;">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
             <span id="current-lang-text">EN</span>
         </button>
-        <div class="lang-menu" style="display: none; position: absolute; top: 100%; right: 0; margin-top: 8px; background: rgba(40,40,45,0.95); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.3); z-index: 1000; min-width: 120px;">
-            <a href="#" onclick="changeLanguage('en'); return false;" style="display: block; padding: 10px 16px; color: white; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 14px; text-align: left;">English</a>
-            <a href="#" onclick="changeLanguage('ar'); return false;" style="display: block; padding: 10px 16px; color: white; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.05); font-family: 'Cairo', sans-serif; font-size: 14px; text-align: left;">العربية</a>
-            <a href="#" onclick="changeLanguage('am'); return false;" style="display: block; padding: 10px 16px; color: white; text-decoration: none; font-family: 'Noto Sans Ethiopic', sans-serif; font-size: 14px; text-align: left;">አማርኛ</a>
+        <div class="lang-menu" style="display: none; position: absolute; top: 100%; right: 0; margin-top: 8px; background: var(--glass-bg-hover); backdrop-filter: blur(10px); border: 1px solid var(--glass-border); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.3); z-index: 1000; min-width: 120px;">
+            <a href="#" onclick="changeLanguage('en'); return false;" style="display: block; padding: 10px 16px; color: var(--color-text-light); text-decoration: none; border-bottom: 1px solid var(--glass-border); font-size: 14px; text-align: left;">English</a>
+            <a href="#" onclick="changeLanguage('ar'); return false;" style="display: block; padding: 10px 16px; color: var(--color-text-light); text-decoration: none; border-bottom: 1px solid var(--glass-border); font-family: 'Cairo', sans-serif; font-size: 14px; text-align: left;">العربية</a>
+            <a href="#" onclick="changeLanguage('am'); return false;" style="display: block; padding: 10px 16px; color: var(--color-text-light); text-decoration: none; font-family: 'Noto Sans Ethiopic', sans-serif; font-size: 14px; text-align: left;">አማርኛ</a>
         </div>
     </div>
     
@@ -68,40 +72,40 @@
             <div class="bento-bezel bento-wide reveal">
                 <div class="bento-inner" style="align-items: center; text-align: center;">
                     <h2 style="font-size: 28px; margin-bottom: 24px; color: var(--color-white);">Who We Are</h2>
-                    <p style="font-size: 18px; line-height: 1.6; color: #fff; max-width: 800px; margin: 0 auto;">New Nablis Cleaning and Contracting provides integrated property services, cleaning solutions, maintenance, contracting support, and workforce solutions in Qatar.</p>
-                    <p style="font-size: 16px; line-height: 1.6; color: rgba(255,255,255,0.7); max-width: 700px; margin: 16px auto 0;">The company supports residential customers, commercial businesses, property owners, contractors, and project managers.</p>
+                    <p style="font-size: 18px; line-height: 1.6; color: var(--color-text-light); max-width: 800px; margin: 0 auto;">New Nablis Cleaning and Contracting provides integrated property services, cleaning solutions, maintenance, contracting support, and workforce solutions in Qatar.</p>
+                    <p style="font-size: 16px; line-height: 1.6; color: var(--color-text-muted); max-width: 700px; margin: 16px auto 0;">The company supports residential customers, commercial businesses, property owners, contractors, and project managers.</p>
                     
                     <!-- Dotted line mimicking the image -->
                     <div style="width: 100%; height: 1px; border-top: 2px dashed rgba(255,255,255,0.1); margin: 40px 0;"></div>
                     
                     <!-- Values Track -->
                     <h3 style="font-size: 20px; margin-bottom: 8px;">Core Values Activated</h3>
-                    <p style="color: rgba(255,255,255,0.5); font-size: 14px; margin-bottom: 24px;">The principles guiding our daily operations across the network.</p>
+                    <p style="color: var(--color-text-muted); font-size: 14px; margin-bottom: 24px;">The principles guiding our daily operations across the network.</p>
                     
                     <div class="bento-mini-track" style="margin-top: 0; width: 100%; padding-bottom: 20px;">
                         
                         <div class="bento-mini-card active" style="flex: 1;">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
                             <strong style="font-size: 14px;">Professionalism</strong>
-                            <div style="font-size: 11px; color: var(--color-primary); display: flex; align-items: center; gap: 4px;"><div style="width: 12px; height: 12px; background: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div> Activated</div>
+                            <div style="font-size: 11px; color: var(--color-primary); display: flex; align-items: center; gap: 4px;"><div style="width: 12px; height: 12px; background: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div> Activated</div>
                         </div>
                         
                         <div class="bento-mini-card active" style="flex: 1;">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                             <strong style="font-size: 14px;">Reliability</strong>
-                            <div style="font-size: 11px; color: var(--color-primary); display: flex; align-items: center; gap: 4px;"><div style="width: 12px; height: 12px; background: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div> Activated</div>
+                            <div style="font-size: 11px; color: var(--color-primary); display: flex; align-items: center; gap: 4px;"><div style="width: 12px; height: 12px; background: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div> Activated</div>
                         </div>
 
                         <div class="bento-mini-card active" style="flex: 1;">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                             <strong style="font-size: 14px;">Quality</strong>
-                            <div style="font-size: 11px; color: var(--color-primary); display: flex; align-items: center; gap: 4px;"><div style="width: 12px; height: 12px; background: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div> Activated</div>
+                            <div style="font-size: 11px; color: var(--color-primary); display: flex; align-items: center; gap: 4px;"><div style="width: 12px; height: 12px; background: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div> Activated</div>
                         </div>
 
                         <div class="bento-mini-card active" style="flex: 1;">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
                             <strong style="font-size: 14px;">Trust</strong>
-                            <div style="font-size: 11px; color: var(--color-primary); display: flex; align-items: center; gap: 4px;"><div style="width: 12px; height: 12px; background: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div> Activated</div>
+                            <div style="font-size: 11px; color: var(--color-primary); display: flex; align-items: center; gap: 4px;"><div style="width: 12px; height: 12px; background: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div> Activated</div>
                         </div>
                     </div>
                     
@@ -126,12 +130,12 @@
                                 <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="8"></circle>
                                 <circle cx="50" cy="50" r="40" fill="none" stroke="#3FA9F5" stroke-width="8" stroke-dasharray="251" stroke-dashoffset="60" stroke-linecap="round"></circle>
                             </svg>
-                            <div style="font-size: 32px; font-weight: 700; color: #fff;">1</div>
+                            <div style="font-size: 32px; font-weight: 700; color: var(--color-text-light);">1</div>
                             <!-- Little pill on side -->
-                            <div style="position: absolute; right: -10px; background: #3FA9F5; padding: 4px 8px; border-radius: 12px; color: white; font-size: 10px; font-weight: bold; border: 2px solid var(--color-bg-base);"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                            <div style="position: absolute; right: -10px; background: #3FA9F5; padding: 4px 8px; border-radius: 12px; color: var(--color-text-light); font-size: 10px; font-weight: bold; border: 2px solid var(--color-bg-base);"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
                         </div>
                         
-                        <p style="color: rgba(255,255,255,0.7); font-size: 15px; max-width: 280px;">To provide dependable property, cleaning, contracting, and workforce solutions through professional service and a commitment to quality.</p>
+                        <p style="color: var(--color-text-muted); font-size: 15px; max-width: 280px;">To provide dependable property, cleaning, contracting, and workforce solutions through professional service and a commitment to quality.</p>
                     </div>
                 </div>
             </div>
@@ -142,17 +146,17 @@
                     
                     <div class="radar-circle">
                         <!-- Points on radar -->
-                        <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: #3FA9F5; padding: 6px; border-radius: 50%; border: 2px solid var(--color-bg-base); z-index: 5;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg></div>
-                        <div style="position: absolute; bottom: 20px; right: -5px; background: var(--color-white); padding: 4px; border-radius: 50%; border: 2px solid var(--color-bg-base); z-index: 5;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg></div>
-                        <div style="position: absolute; top: 30px; left: -10px; background: rgba(255,255,255,0.2); padding: 4px; border-radius: 50%; z-index: 5;"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg></div>
+                        <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: #3FA9F5; padding: 6px; border-radius: 50%; border: 2px solid var(--color-bg-base); z-index: 5;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg></div>
+                        <div style="position: absolute; bottom: 20px; right: -5px; background: var(--color-white); padding: 4px; border-radius: 50%; border: 2px solid var(--color-bg-base); z-index: 5;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg></div>
+                        <div style="position: absolute; top: 30px; left: -10px; background: var(--glass-border); padding: 4px; border-radius: 50%; z-index: 5;"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg></div>
                         
                         <div class="radar-core">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                         </div>
                     </div>
                     
                     <h2 style="font-size: 18px; margin-bottom: 12px; margin-top: 10px;">Continuous Vision Active</h2>
-                    <p style="color: rgba(255,255,255,0.7); font-size: 15px;">To become a trusted service partner for homes, businesses, contractors, and property owners throughout Qatar.</p>
+                    <p style="color: var(--color-text-muted); font-size: 15px;">To become a trusted service partner for homes, businesses, contractors, and property owners throughout Qatar.</p>
                 </div>
             </div>
 
@@ -169,8 +173,8 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <img src="assets/images/logo/logo.png" alt="New Nablis logo" class="footer-logo">
-                    <p style="color: rgba(255,255,255,0.7)">New Nablis Cleaning and Contracting</p>
-                    <p style="color: rgba(255,255,255,0.7)">Professional property and workforce solutions in Doha, Qatar.</p>
+                    <p style="color: var(--color-text-muted)">New Nablis Cleaning and Contracting</p>
+                    <p style="color: var(--color-text-muted)">Professional property and workforce solutions in Doha, Qatar.</p>
                 </div>
                 <div class="footer-col">
                     <h4>SERVICES</h4>
@@ -196,8 +200,8 @@
                         <li><a href="#" class="config-phone">Phone</a></li>
                         <li><a href="#" class="config-whatsapp">WhatsApp</a></li>
                         <li><a href="#" class="config-email">Email</a></li>
-                        <li style="color: rgba(255,255,255,0.7)">Doha, Qatar</li>
-                        <li style="color: rgba(255,255,255,0.7)">C.R. No. 231717</li>
+                        <li style="color: var(--color-text-muted)">Doha, Qatar</li>
+                        <li style="color: var(--color-text-muted)">C.R. No. 231717</li>
                     </ul>
                 </div>
             </div>
@@ -233,6 +237,7 @@ function googleTranslateElementInit() {
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
+
 
 
 

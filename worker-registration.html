@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Worker Registration | New Nablis Cleaning & Contracting</title>
     <meta name="description" content="Submit your information to New Nablis for consideration for suitable available opportunities in Doha, Qatar.">
-    <link rel="stylesheet" href="css/variables.css?v=3">
-    <link rel="stylesheet" href="css/main.css?v=4">
-    <link rel="stylesheet" href="css/components.css?v=3">
-    <link rel="stylesheet" href="css/responsive.css?v=3">
+    <link rel="stylesheet" href="css/variables.css?v=5">
+    <link rel="stylesheet" href="css/main.css?v=5">
+    <link rel="stylesheet" href="css/components.css?v=5">
+    <link rel="stylesheet" href="css/responsive.css?v=5">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         .page-header { padding: 160px 0 80px; background-color: var(--color-background-alt); text-align: center; }
@@ -39,15 +39,19 @@
 
 <div class="nav-right" style="display:flex; align-items:center; gap: 12px;">
     <!-- Language Dropdown -->
-    <div class="lang-dropdown" style="position: relative;">
-        <button class="lang-btn" style="background: transparent; border: 1px solid rgba(255,255,255,0.2); color: white; padding: 6px 12px; border-radius: 20px; display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 13px; font-weight: 600;">
+    <button class="theme-toggle" aria-label="Toggle Theme" style="background: transparent; border: 1px solid var(--glass-border); color: var(--color-text-light); padding: 6px 12px; border-radius: 20px; display: flex; align-items: center; justify-content: center; cursor: pointer;" onclick="toggleTheme()">
+              <svg class="sun-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+              <svg class="moon-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+          <div class="lang-dropdown" style="position: relative;">
+        <button class="lang-btn" style="background: transparent; border: 1px solid var(--glass-border); color: var(--color-text-light); padding: 6px 12px; border-radius: 20px; display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 13px; font-weight: 600;">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
             <span id="current-lang-text">EN</span>
         </button>
-        <div class="lang-menu" style="display: none; position: absolute; top: 100%; right: 0; margin-top: 8px; background: rgba(40,40,45,0.95); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.3); z-index: 1000; min-width: 120px;">
-            <a href="#" onclick="changeLanguage('en'); return false;" style="display: block; padding: 10px 16px; color: white; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 14px; text-align: left;">English</a>
-            <a href="#" onclick="changeLanguage('ar'); return false;" style="display: block; padding: 10px 16px; color: white; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.05); font-family: 'Cairo', sans-serif; font-size: 14px; text-align: left;">العربية</a>
-            <a href="#" onclick="changeLanguage('am'); return false;" style="display: block; padding: 10px 16px; color: white; text-decoration: none; font-family: 'Noto Sans Ethiopic', sans-serif; font-size: 14px; text-align: left;">አማርኛ</a>
+        <div class="lang-menu" style="display: none; position: absolute; top: 100%; right: 0; margin-top: 8px; background: var(--glass-bg-hover); backdrop-filter: blur(10px); border: 1px solid var(--glass-border); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.3); z-index: 1000; min-width: 120px;">
+            <a href="#" onclick="changeLanguage('en'); return false;" style="display: block; padding: 10px 16px; color: var(--color-text-light); text-decoration: none; border-bottom: 1px solid var(--glass-border); font-size: 14px; text-align: left;">English</a>
+            <a href="#" onclick="changeLanguage('ar'); return false;" style="display: block; padding: 10px 16px; color: var(--color-text-light); text-decoration: none; border-bottom: 1px solid var(--glass-border); font-family: 'Cairo', sans-serif; font-size: 14px; text-align: left;">العربية</a>
+            <a href="#" onclick="changeLanguage('am'); return false;" style="display: block; padding: 10px 16px; color: var(--color-text-light); text-decoration: none; font-family: 'Noto Sans Ethiopic', sans-serif; font-size: 14px; text-align: left;">አማርኛ</a>
         </div>
     </div>
     
@@ -168,8 +172,8 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <img src="assets/images/logo/logo.png" alt="New Nablis logo" class="footer-logo">
-                    <p style="color: rgba(255,255,255,0.7)">New Nablis Cleaning and Contracting</p>
-                    <p style="color: rgba(255,255,255,0.7)">Professional property and workforce solutions in Doha, Qatar.</p>
+                    <p style="color: var(--color-text-muted)">New Nablis Cleaning and Contracting</p>
+                    <p style="color: var(--color-text-muted)">Professional property and workforce solutions in Doha, Qatar.</p>
                 </div>
                 <div class="footer-col">
                     <h4>SERVICES</h4>
@@ -195,8 +199,8 @@
                         <li><a href="#" class="config-phone">Phone</a></li>
                         <li><a href="#" class="config-whatsapp">WhatsApp</a></li>
                         <li><a href="#" class="config-email">Email</a></li>
-                        <li style="color: rgba(255,255,255,0.7)">Doha, Qatar</li>
-                        <li style="color: rgba(255,255,255,0.7)">C.R. No. 231717</li>
+                        <li style="color: var(--color-text-muted)">Doha, Qatar</li>
+                        <li style="color: var(--color-text-muted)">C.R. No. 231717</li>
                     </ul>
                 </div>
             </div>
@@ -232,6 +236,7 @@ function googleTranslateElementInit() {
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
+
 
 
 

@@ -123,7 +123,7 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        background: var(--color-white);
+        background: var(--color-text-light);
         display: flex;
         box-shadow: 0 -4px 15px rgba(0,0,0,0.05);
         z-index: 99;
@@ -144,7 +144,7 @@
     
     .mcb-whatsapp { color: var(--color-green); }
     .mcb-call { color: var(--color-navy); }
-    .mcb-quote { background: var(--color-navy); color: var(--color-white) !important; }
+    .mcb-quote { background: var(--color-navy); color: var(--color-text-light) !important; }
 }
 
 /* Reduced Motion */
@@ -198,4 +198,5 @@
         grid-template-columns: 1fr !important;
     }
 }
+
 

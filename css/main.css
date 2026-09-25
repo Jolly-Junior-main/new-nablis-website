@@ -138,15 +138,15 @@ img {
             gap: 24px;
         }
 
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.1);
+                .glass-panel {
+            background: var(--glass-bg);
             backdrop-filter: blur(24px);
             -webkit-backdrop-filter: blur(24px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid var(--glass-border);
             border-radius: 32px;
             padding: 32px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.05);
-            color: #ffffff;
+            color: var(--color-text-light);
         }
 
         .panel-dark {
@@ -467,6 +467,8 @@ body::before {
     gap: 24px;
     align-items: center;
 }
+
+
 
 
 

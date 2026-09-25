@@ -46,3 +46,21 @@
     --shadow-md: var(--glass-shadow);
 }
 
+
+body.light-mode {
+    --color-bg-base: #f0f2f5;
+    --color-bg-gradient: radial-gradient(circle at 10% 10%, #ffffff 0%, transparent 60%),
+                         radial-gradient(circle at 90% 90%, #e0e5ec 0%, transparent 60%),
+                         radial-gradient(circle at 50% 50%, #ffffff 0%, transparent 60%);
+                         
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-bg-hover: rgba(255, 255, 255, 0.9);
+    --glass-border: rgba(0, 0, 0, 0.1);
+    --glass-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    
+    --color-text: #1a1a1a;
+    --color-text-muted: #666666;
+    --color-text-light: #000000;
+    
+    --color-border: rgba(0, 0, 0, 0.1);
+}
