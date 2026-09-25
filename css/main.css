@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+﻿/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -14,11 +14,22 @@ body {
     font-family: 'Inter', sans-serif;
     color: var(--color-text);
     background-color: var(--color-bg-base);
-    background-image: var(--color-bg-gradient);
-    background-attachment: fixed;
     line-height: 1.6;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-bg-base);
+    background-image: var(--color-bg-gradient);
+    z-index: -9999;
+    pointer-events: none;
 }
 
 /* Typography Hierarchy */
@@ -229,8 +240,26 @@ img {
             justify-content: center;
         }
         .details-body {
-            padding: 24px;
-        }
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-bg-base);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-bg-base);
+    background-image: var(--color-bg-gradient);
+    z-index: -9999;
+    pointer-events: none;
+}
         .tree-line {
             display: flex;
             align-items: center;
@@ -409,7 +438,27 @@ body.lang-ar { direction: rtl; text-align: right; }
 
 /* Hide Google Translate */
 .skiptranslate > iframe.goog-te-banner-frame { display: none !important; }
-body { top: 0px !important; }
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-bg-base);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-bg-base);
+    background-image: var(--color-bg-gradient);
+    z-index: -9999;
+    pointer-events: none;
+}
 .goog-tooltip { display: none !important; }
 .goog-tooltip:hover { display: none !important; }
 .goog-text-highlight { background-color: transparent !important; border: none !important; box-shadow: none !important; }
@@ -421,3 +470,5 @@ body { top: 0px !important; }
     gap: 24px;
     align-items: center;
 }
+
+

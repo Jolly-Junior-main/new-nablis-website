@@ -1,4 +1,4 @@
-/* Desktop Down */
+﻿/* Desktop Down */
 @media (max-width: 1024px) {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
@@ -42,9 +42,7 @@
 
     .site-header { height: auto; min-height: var(--header-height-mobile); background-color: rgba(47, 46, 50, 0.95) !important; backdrop-filter: blur(24px); box-shadow: var(--shadow-sm); padding: 10px 0; }
     
-    .logo-img {
-        height: 32px;
-    }
+    .logo-img { height: 50px; max-width: 180px; object-fit: contain; }
 
     .hero-cleanova {
         padding-top: calc(var(--header-height-mobile) + 30px);
@@ -200,3 +198,4 @@
         grid-template-columns: 1fr !important;
     }
 }
+
