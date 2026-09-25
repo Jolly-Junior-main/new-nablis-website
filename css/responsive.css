@@ -190,3 +190,13 @@
         flex: 0 0 auto;
     }
 }
+@media (max-width: 900px) {
+    .hero-layout-responsive {
+        display: flex !important;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .services-tid-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
