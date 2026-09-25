@@ -113,3 +113,28 @@ function injectConfigData() {
         el.textContent = NEW_NABLIS_CONFIG.hours.display;
     });
 }
+
+// Language Dropdown Toggle
+document.addEventListener('DOMContentLoaded', () => {
+    const langBtn = document.querySelector('.lang-btn');
+    const langMenu = document.querySelector('.lang-menu');
+    
+    if (langBtn && langMenu) {
+        langBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            if (langMenu.style.display === 'none' || langMenu.style.display === '') {
+                langMenu.style.display = 'block';
+            } else {
+                langMenu.style.display = 'none';
+            }
+        });
+        
+        // Close when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+                langMenu.style.display = 'none';
+            }
+        });
+    }
+});

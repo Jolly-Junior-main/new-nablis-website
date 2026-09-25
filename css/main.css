@@ -6,10 +6,12 @@
 }
 
 html {
+    overflow-x: hidden;
     font-size: 16px;
 }
 
 body {
+    overflow-x: hidden;
     font-family: 'Inter', sans-serif;
     color: var(--color-text);
     background-color: var(--color-bg-base);
@@ -238,6 +240,7 @@ img {
             justify-content: center;
         }
         .details-body {
+    overflow-x: hidden;
     font-family: 'Inter', sans-serif;
     color: var(--color-text);
     background-color: var(--color-bg-base);
@@ -339,14 +342,10 @@ body::before {
 }
 
 @media (max-width: 768px) {
-    .bento-bezel {
-        padding: 16px;
-        border-radius: 32px;
-    }
-    .bento-inner {
-        padding: 32px 24px;
-        border-radius: 20px;
-    }
+    .bento-grid { padding: 0 16px 40px; gap: 16px; }
+    .bento-bezel { padding: 8px; border-radius: 24px; }
+    .bento-inner { padding: 24px 16px; border-radius: 16px; }
+    .bento-mini-card { min-width: 140px; padding: 16px; }
 }
 
 .bento-mini-track {
@@ -436,6 +435,7 @@ body.lang-ar { direction: rtl; text-align: right; }
 /* Hide Google Translate */
 .skiptranslate > iframe.goog-te-banner-frame { display: none !important; }
 body {
+    overflow-x: hidden;
     font-family: 'Inter', sans-serif;
     color: var(--color-text);
     background-color: var(--color-bg-base);
@@ -466,6 +466,10 @@ body::before {
     gap: 24px;
     align-items: center;
 }
+
+
+
+
 
 
 
