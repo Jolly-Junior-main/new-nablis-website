@@ -163,3 +163,30 @@
 
 
 
+@media (max-width: 768px) {
+    /* Pricing Horizontal Scroll */
+    .pricing-grid {
+        display: flex !important;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 16px;
+        padding-bottom: 24px;
+        -webkit-overflow-scrolling: touch;
+    }
+    .pricing-grid::-webkit-scrollbar {
+        height: 4px;
+    }
+    .pricing-grid::-webkit-scrollbar-thumb {
+        background: var(--color-primary);
+        border-radius: 4px;
+    }
+    .pricing-grid::-webkit-scrollbar-track {
+        background: rgba(255,255,255,0.05);
+    }
+    .pricing-card {
+        min-width: 85vw;
+        scroll-snap-align: center;
+        flex: 0 0 auto;
+    }
+}

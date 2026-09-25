@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {
+﻿with open('js/main.js', 'w', encoding='utf-8') as f:
+    f.write("""document.addEventListener('DOMContentLoaded', () => {
     const currentPath = window.location.pathname.split('/').pop() || 'index.html';
     
     document.querySelectorAll('.nav-links .nav-link').forEach(link => {
@@ -113,3 +114,4 @@ function injectConfigData() {
         el.textContent = NEW_NABLIS_CONFIG.hours.display;
     });
 }
+""")
