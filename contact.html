@@ -77,116 +77,127 @@
 
     <main>
 
-    <section class="contact-dashboard">
-        <div class="dash-grid reveal">
+    
+    <style>
+        .contact-style-grid {
+            padding: 100px 0;
+            background: transparent;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        @media(max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .contact-card {
+            background: rgba(20, 25, 30, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        body.light-mode .contact-card {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        .contact-card .card-image {
+            width: 100%;
+            height: 250px;
+            background-position: center;
+            background-size: cover;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        body.light-mode .contact-card .card-image {
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .contact-card .card-content {
+            padding: 30px;
+        }
+        .contact-card h3 {
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--color-text-light);
+            margin-bottom: 12px;
+        }
+        .contact-card p {
+            font-size: 15px;
+            color: var(--color-text-muted);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .contact-card a, .contact-card .contact-detail {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+        }
+    </style>
+
+    <section class="contact-style-grid">
+        <div class="container reveal">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <h2 style="font-size: 36px; color: var(--color-text-light); margin-bottom: 16px;">Contact Us</h2>
+                <p style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto;">We are here to assist you. Reach out through any of the channels below.</p>
+            </div>
             
-            <!-- Left Large Form -->
-            <div class="glass-panel dash-card-form">
-                <div class="form-header">
-                    <h2>Get In Touch</h2>
-                    <button class="btn-upload">Send Message</button>
+            <div class="contact-grid">
+                <!-- Card 1 -->
+                <div class="contact-card">
+                    <div class="card-image" style="background-image: url('assets/images/contact_email_1790610007485.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Email Support</h3>
+                        <p>Drop us an email anytime. Our customer service team will review your inquiry and get back to you within 24 hours.</p>
+                        <a href="mailto:info@newnablis.com">info@newnablis.com</a>
+                    </div>
                 </div>
                 
-                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
-                    <div style="display: flex; gap: 16px;">
-                        <input type="text" name="name" class="custom-input" placeholder="Full Name" required>
-                        <input type="tel" name="phone" class="custom-input" placeholder="Phone Number">
+                <!-- Card 2 -->
+                <div class="contact-card">
+                    <div class="card-image" style="background-image: url('assets/images/contact_phone_1790610035652.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Instant Support</h3>
+                        <p>Need immediate assistance or emergency booking? Call our support hotline or message us on WhatsApp for rapid response.</p>
+                        <div class="contact-detail">+974 XXXXXXX</div>
                     </div>
-                    <input type="email" name="email" class="custom-input" placeholder="Email Address" required>
-                    <select name="service" class="custom-input">
-                        <option value="" disabled selected>Select a Service</option>
-                        <option value="cleaning">Cleaning Services</option>
-                        <option value="contracting">Contracting</option>
-                        <option value="staffing">Staffing</option>
-                        <option value="other">Other Inquiry</option>
-                    </select>
-                    <textarea name="message" class="custom-input" placeholder="How can we help you?" rows="4" required></textarea>
-                </form>
-            </div>
-
-            <!-- Left Small Direct Box -->
-            <div class="glass-panel dash-card-direct panel-dark">
-                <div style="display: flex; align-items: center; gap: 16px;">
-                    <div style="width: 40px; height: 40px; border: 1px solid var(--glass-border); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #ff7a45;">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                    </div>
-                    <div>
-                        <div style="font-weight: 600; font-size: 16px;">Emergency / Instant Booking</div>
-                        <div style="font-size: 12px; color: var(--color-text-muted);">WhatsApp | 15 Min Response</div>
-                    </div>
-                </div>
-                <button class="btn btn-primary config-whatsapp" style="padding: 10px 20px; border-radius: 12px;">Chat Now</button>
-            </div>
-
-            <!-- Right Top Company Info -->
-            <div class="glass-panel panel-dark dash-card-details">
-                <div class="details-header">
-                    <div class="details-avatar">
-                        <img src="assets/images/logo/logo.png" style="width:32px;" alt="logo">
-                    </div>
-                    <div>
-                        <div style="font-weight: 700; font-size: 16px;">New Nablis</div>
-                        <div style="font-size: 12px; color: #666;">Cleaning & Contracting</div>
-                    </div>
-                </div>
-                <div class="details-body">
-                    <div class="tree-line">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                        <strong>Location</strong>
-                    </div>
-                    <div class="tree-line" style="margin-left: 28px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 16px;">
-                        Doha, Qatar
-                    </div>
-                    <div class="tree-line">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                        <strong>Email</strong>
-                    </div>
-                    <div class="tree-line" style="margin-left: 28px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 16px;">
-                        info@newnablis.com
-                    </div>
-                    <div class="tree-line">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                        <strong>Company Reg.</strong>
-                    </div>
-                    <div class="tree-line" style="margin-left: 28px; padding-left: 16px;">
-                        C.R. No. 231717 <span style="background: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 99px; font-size: 10px; margin-left: 8px;">Verified</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Bottom Stats -->
-            <div class="glass-panel panel-dark dash-card-stats">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <div>
-                        <div style="font-weight: 700; font-size: 18px;">Statistics</div>
-                        <div style="font-size: 12px; color: var(--color-text-muted);">Response Performance</div>
-                    </div>
-                    <div style="color: var(--color-text-muted);">...</div>
                 </div>
                 
-                <div style="display: flex; gap: 24px; margin-top: 32px;">
-                    <div style="flex: 1; font-size: 12px; color: var(--color-text-muted);">
-                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px;">
-                            <div style="width: 12px; height: 12px; border-radius: 4px; background: #ff7a45;"></div>
-                            <div>Calls<br><strong style="color: var(--color-text-light); font-size:14px;">98.2%</strong></div>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <div style="width: 12px; height: 12px; border-radius: 4px; background: #d1f34d;"></div>
-                            <div>WhatsApp<br><strong style="color: var(--color-text-light); font-size:14px;">100%</strong></div>
-                        </div>
+                <!-- Card 3 -->
+                <div class="contact-card">
+                    <div class="card-image" style="background-image: url('assets/images/contact_location_1790610071273.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Headquarters</h3>
+                        <p>Our main operations and management are located centrally. Feel free to visit us for formal contracting discussions.</p>
+                        <div class="contact-detail">Doha, Qatar</div>
                     </div>
-                    <div style="flex: 1;">
-                        <div class="chart-circle">
-                            <strong style="font-size: 20px;">24/7</strong>
-                            <span style="font-size: 10px; color: #888; text-transform: uppercase;">Available</span>
-                        </div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="contact-card">
+                    <div class="card-image" style="background-image: url('assets/images/contact_clock_1790610093668.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Working Hours</h3>
+                        <p>Our teams are available six days a week to ensure your properties remain clean, maintained, and secure.</p>
+                        <div class="contact-detail">Sat - Thu: 8:00 AM - 6:00 PM</div>
                     </div>
                 </div>
             </div>
-
+            
+            <div style="margin-top: 60px; text-align: center;">
+                <a href="quote.html" class="btn-brand" style="font-size: 18px; padding: 15px 40px;">Send a Direct Message</a>
+            </div>
         </div>
     </section>
+
 </main>
 
     <a href="#" class="whatsapp-float config-whatsapp" aria-label="WhatsApp Us" target="_blank">
