@@ -1,0 +1,15 @@
+{
+  "name": "new-nablis",
+  "version": "1.0.0",
+  "description": "This is a complete, static HTML5/CSS3/Vanilla JS website built for New Nablis Cleaning and Contracting in Doha, Qatar.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}

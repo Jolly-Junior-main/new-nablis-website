@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Services | New Nablis Cleaning & Contracting</title>
+    <meta name="description" content="Professional commercial and residential cleaning services in Doha, Qatar. Deep cleaning, sanitization, floor care, and routine janitorial services.">
+    <link rel="stylesheet" href="css/variables.css?v=9">
+    <link rel="stylesheet" href="css/main.css?v=9">
+    <link rel="stylesheet" href="css/components.css?v=9">
+    <link rel="stylesheet" href="css/responsive.css?v=9">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header { padding: 160px 0 80px; background-color: var(--color-background-alt); text-align: center; }
+        .service-detail-section { padding: 80px 0; }
+        .service-detail-row { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-bottom: 80px; }
+        .service-detail-row:last-child { margin-bottom: 0; }
+        .service-detail-row:nth-child(even) { direction: rtl; }
+        .service-detail-row:nth-child(even) > * { direction: ltr; }
+        .service-image { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); height: 400px; background: #eee; display: flex; align-items: center; justify-content: center; }
+        .check-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 24px 0; }
+        .check-list li { color: var(--color-text-muted); }
+        .check-list li::before { content: "\2714"; color: var(--color-primary); font-weight: bold; margin-right: 8px; }
+        @media(max-width: 768px) {
+            .service-detail-row { grid-template-columns: 1fr; gap: 32px; }
+            .service-detail-row:nth-child(even) { direction: ltr; }
+            .service-image { height: 250px; }
+            .check-list { grid-template-columns: 1fr; }
+        }
+    </style>
+    <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+</head>
+<body>
+        <header class="site-header" style="top:0;">
+        <div class="container nav-container">
+            <div class="logo-container">
+                <a href="/" class="logo" style="text-align:center; display:flex; flex-direction:column; align-items:center;">
+                    <img src="assets/images/logo/logo.png" alt="New Nablis logo" class="logo-img" style="height: 64px; margin-bottom: 0;">
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about/" class="nav-link">About Us</a>
+                <div class="nav-dropdown-container">
+                    <a href="/services/" class="nav-link">Services <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="/cleaning/">Cleaning</a>
+                        <a href="/property-preparation/">Property Preparation</a>
+                        <a href="/contracting/">Contracting</a>
+                        <a href="/staffing/">Workforce & Staffing</a>
+                    </div>
+                </div>
+                <a href="/contact/" class="nav-link">Contact Us</a>
+            </nav>
+            
+
+<div class="nav-right" style="display:flex; align-items:center; gap: 12px;">
+    <!-- Language Dropdown -->
+    <button class="theme-toggle" aria-label="Toggle Theme" style="background: transparent; border: 1px solid var(--glass-border); color: var(--color-text-light); padding: 6px 12px; border-radius: 20px; display: flex; align-items: center; justify-content: center; cursor: pointer;" onclick="toggleTheme()">
+              <svg class="sun-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+              <svg class="moon-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+          <div class="lang-dropdown" style="position: relative;">
+        <button class="lang-btn" style="background: transparent; border: 1px solid var(--glass-border); color: var(--color-text-light); padding: 6px 12px; border-radius: 20px; display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 13px; font-weight: 600;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <span id="current-lang-text">EN</span>
+        </button>
+        <div class="lang-menu" style="display: none; position: absolute; top: 100%; right: 0; margin-top: 8px; background: var(--glass-bg-hover); backdrop-filter: blur(10px); border: 1px solid var(--glass-border); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.3); z-index: 1000; min-width: 120px;">
+            <a href="#" onclick="changeLanguage('en'); return false;" style="display: block; padding: 10px 16px; color: var(--color-text-light); text-decoration: none; border-bottom: 1px solid var(--glass-border); font-size: 14px; text-align: left;">English</a>
+            <a href="#" onclick="changeLanguage('ar'); return false;" style="display: block; padding: 10px 16px; color: var(--color-text-light); text-decoration: none; border-bottom: 1px solid var(--glass-border); font-family: 'Cairo', sans-serif; font-size: 14px; text-align: left;">العربية</a>
+            <a href="#" onclick="changeLanguage('am'); return false;" style="display: block; padding: 10px 16px; color: var(--color-text-light); text-decoration: none; font-family: 'Noto Sans Ethiopic', sans-serif; font-size: 14px; text-align: left;">አማርኛ</a>
+        </div>
+    </div>
+    
+    <a href="/quote/" class="btn-brand">Request a Quote</a>
+
+
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <span style="background: var(--color-text-light);"></span>
+                    <span style="background: var(--color-text-light);"></span>
+                    <span style="background: var(--color-text-light);"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+<div class="mobile-nav-drawer"><nav class="mobile-nav-links"><a href="/" class="mobile-nav-link">Home</a><a href="/about/" class="mobile-nav-link">About Us</a><a href="/services/" class="mobile-nav-link">Services</a>
+        <div style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+            <a href="/cleaning/" class="mobile-nav-link" style="font-size: 14px; opacity: 0.8;">Cleaning</a>
+            <a href="/property-preparation/" class="mobile-nav-link" style="font-size: 14px; opacity: 0.8;">Property Preparation</a>
+            <a href="/contracting/" class="mobile-nav-link" style="font-size: 14px; opacity: 0.8;">Contracting</a>
+            <a href="/staffing/" class="mobile-nav-link" style="font-size: 14px; opacity: 0.8;">Workforce & Staffing</a>
+        </div><a href="/contact/" class="mobile-nav-link">Contact Us</a><a href="/quote/" class="btn btn-primary" style="margin-top: 16px;">Request a Quote</a></nav></div>
+
+    <main>
+        <section class="page-header">
+            <div class="container reveal">
+                <h1>A Cleaner Space. A Better Environment.</h1>
+                <p style="max-width: 700px; margin: 0 auto;">Premium professional cleaning and janitorial services for properties across Qatar.</p>
+            </div>
+        </section>
+
+        <section class="service-detail-section section-light">
+            <div class="container">
+                <!-- Deep Cleaning -->
+                <div class="service-detail-row reveal">
+                    <div>
+                        <h2>Deep Cleaning & Sanitization</h2>
+                        <p>Comprehensive deep cleaning services to eliminate dirt and ensure a healthy, sanitized environment.</p>
+                        <ul class="check-list">
+                            <li>Kitchen deep cleaning</li>
+                            <li>Bathroom deep cleaning</li>
+                            <li>Detailed grout cleaning</li>
+                            <li>Interior window cleaning</li>
+                            <li>Exterior window cleaning where applicable</li>
+                            <li>Wall washing</li>
+                            <li>Detailed surface cleaning</li>
+                        </ul>
+                    </div>
+                    <div class="service-image" style="background: url('assets/images/deep_cleaning.jpg') center/cover;"></div>
+                </div>
+
+                <!-- Routine Janitorial -->
+                <div class="service-detail-row reveal">
+                    <div>
+                        <h2>Routine Janitorial & Housekeeping</h2>
+                        <p>Consistent, high-quality cleaning for offices, retail locations, commercial facilities, and private homes.</p>
+                        <ul class="check-list">
+                            <li>Surface cleaning</li>
+                            <li>Vacuuming</li>
+                            <li>Mopping</li>
+                            <li>Dusting</li>
+                            <li>Trash removal</li>
+                            <li>Routine maintenance cleaning</li>
+                        </ul>
+                    </div>
+                    <div class="service-image" style="background: url('assets/images/routine_janitorial.jpg') center/cover;"></div>
+                </div>
+
+                <!-- Floor Care -->
+                <div class="service-detail-row reveal">
+                    <div>
+                        <h2>Floor Care Specialization</h2>
+                        <p>Expert floor care to maintain the appearance and longevity of your carpets and hard surfaces.</p>
+                        <ul class="check-list">
+                            <li>Carpet deep cleaning</li>
+                            <li>Floor stripping</li>
+                            <li>Waxing</li>
+                            <li>Polishing</li>
+                            <li>Tile care</li>
+                            <li>Hardwood care</li>
+                            <li>Vinyl floor care</li>
+                        </ul>
+                        <a href="quote.html?service=cleaning" class="btn btn-primary mt-4">Request Cleaning Service</a>
+                    </div>
+                    <div class="service-image" style="background: url('assets/images/floor_care.jpg') center/cover;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section section-alt text-center">
+            <div class="container reveal">
+                <h2>Need Professional Cleaning?</h2>
+                <p class="mb-4">Get a customized cleaning plan tailored to your property.</p>
+                <a href="quote.html?service=cleaning" class="btn btn-primary">Request Cleaning</a>
+            </div>
+        </section>
+    </main>
+
+    <a href="#" class="whatsapp-float config-whatsapp" aria-label="WhatsApp Us" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.418-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"/></svg>
+    </a>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/images/logo/logo.png" alt="New Nablis logo" class="footer-logo">
+                    <p style="color: var(--color-text-muted)">New Nablis Cleaning and Contracting</p>
+                    <p style="color: var(--color-text-muted)">Professional property and workforce solutions in Doha, Qatar.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>SERVICES</h4>
+                    <ul class="footer-links">
+                        <li><a href="/cleaning/">Cleaning</a></li>
+                        <li><a href="/property-preparation/">Property Preparation</a></li>
+                        <li><a href="/contracting/">Contracting</a></li>
+                        <li><a href="/staffing/">Staffing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>COMPANY</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                        <li><a href="/quote/">Request Quote</a></li>
+                        <li><a href="/worker-registration/">Worker Registration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACT</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="config-phone">Phone</a></li>
+                        <li><a href="#" class="config-whatsapp">WhatsApp</a></li>
+                        <li><a href="#" class="config-email">Email</a></li>
+                        <li style="color: var(--color-text-muted)">Doha, Qatar</li>
+                        <li style="color: var(--color-text-muted)">C.R. No. 231717</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; <span id="year"></span> New Nablis Cleaning and Contracting. All Rights Reserved.</div>
+                <div class="footer-legal-links">
+                    <a href="/privacy/">Privacy Policy</a>
+                    <a href="/terms/">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/animations.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+    <!-- GSAP & Lenis for Premium Animations -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+<script src="js/i18n.js"></script>
+<div id="google_translate_element" style="display:none;"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: "en", includedLanguages: "en,ar,am", autoDisplay: false}, "google_translate_element");
+}
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

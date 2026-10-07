@@ -1,0 +1,19 @@
+﻿backend:
+  name: github
+  repo: Jolly-Junior-main/new-nablis-website # Path to your GitHub repository
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: "src/assets/images" # Media files will be stored in the repo under this dir
+public_folder: "/assets/images" # The src attribute for uploaded media will begin with this
+
+collections:
+  - name: "services"
+    label: "Services"
+    folder: "src/services"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}

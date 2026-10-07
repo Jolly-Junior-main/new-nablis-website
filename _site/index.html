@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Nablis Cleaning & Contracting | Doha, Qatar</title>
+    <meta name="description" content="Professional cleaning, property maintenance, contracting, and workforce solutions across Qatar.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/variables.css?v=9">
+    <link rel="stylesheet" href="css/main.css?v=9">
+    <link rel="stylesheet" href="css/components.css?v=9">
+    <link rel="stylesheet" href="css/responsive.css?v=9">
+    
+    
+
+    <style>
+        .btn-brand {
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            border: none;
+            padding: 12px 28px;
+            border-radius: 999px;
+            font-weight: 600;
+        }
+        .btn-brand:hover {
+            background-color: #559e2b;
+            color: var(--color-text-light);
+        }
+        
+        .btn-outline-white { background-color: transparent; color: #ffffff; border: 2px solid #ffffff;
+            padding: 12px 28px;
+            border-radius: 999px;
+            font-weight: 600;
+        }
+        .btn-outline-white:hover { background-color: #ffffff; color: #1a1a1a;
+        }
+
+        /* Hero Full Width Layout */
+        .hero-full {
+            position: relative;
+            width: 100%;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            background: url('assets/images/hero.jpg') center/cover no-repeat;
+        }
+        
+        .hero-overlay-gradient {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 70%, transparent 100%);
+            z-index: 1;
+        }
+        
+        .hero-full-content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            padding-top: 80px; /* space for header */
+        }
+        
+        .hero-title-text { color: #ffffff;
+            font-size: clamp(48px, 6vw, 72px);
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+        
+        .hero-subtitle-text {
+            color: #e2e8f0;
+            font-size: clamp(16px, 1.5vw, 20px);
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .hero-full-actions {
+            display: flex;
+            gap: 16px;
+        }
+
+        .search-icon {
+            background: var(--color-text-light);
+            border: none;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin-right: 12px;
+        }
+
+        @media(max-width: 900px) {
+            .hero-overlay-gradient { width: 100%; background: rgba(0,0,0,0.7); }
+            .services-tid { grid-template-columns: 1fr; }
+            
+        }
+        
+        .vid-section {
+            width: 100%;
+            height: 400px;
+            background: url('assets/images/commercial_cleaning.jpg') center/cover;
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0;
+            position: relative;
+        }
+        .vid-section::before {
+            content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.3); border-radius: inherit;
+        }
+
+        .services-more-block {
+            background: var(--glass-bg);
+            color: var(--color-white);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        @media(min-width: 769px) {
+            .mobile-nav-drawer { display: none !important; }
+        }
+    
+        .hero-full::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(to bottom, transparent 0%, var(--color-bg-base) 100%);
+            z-index: 2;
+        }
+</style>
+    <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+</head>
+<body>
+        <header class="site-header" style="top:0;">
+        <div class="container nav-container">
+            <div class="logo-container">
+                <a href="index.html" class="logo" style="text-align:center; display:flex; flex-direction:column; align-items:center;">
+                    <img src="assets/images/logo/logo.png" alt="New Nablis logo" class="logo-img" style="height: 64px; margin-bottom: 0;">
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <div class="nav-dropdown-container">
+                    <a href="services.html" class="nav-link">Services <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="cleaning.html">Cleaning</a>
+                        <a href="property-preparation.html">Property Preparation</a>
+                        <a href="contracting.html">Contracting</a>
+                        <a href="staffing.html">Workforce & Staffing</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </nav>
+            
+
+<div class="nav-right" style="display:flex; align-items:center; gap: 12px;">
+    <!-- Language Dropdown -->
+    <button class="theme-toggle" aria-label="Toggle Theme" style="background: transparent; border: 1px solid var(--glass-border); color: var(--color-text-light); padding: 6px 12px; border-radius: 20px; display: flex; align-items: center; justify-content: center; cursor: pointer;" onclick="toggleTheme()">
+              <svg class="sun-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+              <svg class="moon-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+          <div class="lang-dropdown" style="position: relative;">
+        <button class="lang-btn" style="background: transparent; border: 1px solid var(--glass-border); color: var(--color-text-light); padding: 6px 12px; border-radius: 20px; display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 13px; font-weight: 600;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <span id="current-lang-text">EN</span>
+        </button>
+        <div class="lang-menu" style="display: none; position: absolute; top: 100%; right: 0; margin-top: 8px; background: var(--glass-bg-hover); backdrop-filter: blur(10px); border: 1px solid var(--glass-border); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.3); z-index: 1000; min-width: 120px;">
+            <a href="#" onclick="changeLanguage('en'); return false;" style="display: block; padding: 10px 16px; color: var(--color-text-light); text-decoration: none; border-bottom: 1px solid var(--glass-border); font-size: 14px; text-align: left;">English</a>
+            <a href="#" onclick="changeLanguage('ar'); return false;" style="display: block; padding: 10px 16px; color: var(--color-text-light); text-decoration: none; border-bottom: 1px solid var(--glass-border); font-family: 'Cairo', sans-serif; font-size: 14px; text-align: left;">العربية</a>
+            <a href="#" onclick="changeLanguage('am'); return false;" style="display: block; padding: 10px 16px; color: var(--color-text-light); text-decoration: none; font-family: 'Noto Sans Ethiopic', sans-serif; font-size: 14px; text-align: left;">አማርኛ</a>
+        </div>
+    </div>
+    
+    <a href="quote.html" class="btn-brand">Request a Quote</a>
+
+
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <span style="background: var(--color-text-light);"></span>
+                    <span style="background: var(--color-text-light);"></span>
+                    <span style="background: var(--color-text-light);"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+<div class="mobile-nav-drawer"><nav class="mobile-nav-links"><a href="index.html" class="mobile-nav-link">Home</a><a href="about.html" class="mobile-nav-link">About Us</a><a href="services.html" class="mobile-nav-link">Services</a>
+        <div style="padding-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+            <a href="cleaning.html" class="mobile-nav-link" style="font-size: 14px; opacity: 0.8;">Cleaning</a>
+            <a href="property-preparation.html" class="mobile-nav-link" style="font-size: 14px; opacity: 0.8;">Property Preparation</a>
+            <a href="contracting.html" class="mobile-nav-link" style="font-size: 14px; opacity: 0.8;">Contracting</a>
+            <a href="staffing.html" class="mobile-nav-link" style="font-size: 14px; opacity: 0.8;">Workforce & Staffing</a>
+        </div><a href="contact.html" class="mobile-nav-link">Contact Us</a><a href="quote.html" class="btn btn-primary" style="margin-top: 16px;">Request a Quote</a></nav></div>
+
+    <main>
+        <!-- Hero Section (Putzhexen Style) -->
+        <section class="hero-full">
+            <div class="hero-overlay-gradient"></div>
+            <div class="container hero-full-content">
+                <h1 class="hero-title-text reveal">Dedicated to Clean.<br>Committed to Quality.</h1>
+                <p class="hero-subtitle-text reveal" style="transition-delay: 0.1s;">Serving homes, businesses & institutions with top-quality cleaning</p>
+                <div class="hero-full-actions reveal" style="transition-delay: 0.2s;">
+                    <a href="quote.html" class="btn-brand" style="text-decoration:none; display:inline-block;">Get a Free Quote</a>
+                    <a href="quote.html" class="btn-outline-white" style="text-decoration:none; display:inline-block;">Book a Site Visit</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section (Tid Style) -->
+        <section class="section">
+            <div class="container">
+                <div class="services-tid">
+                    <div class="services-tid-intro reveal">
+                        <div>
+                            <h2 style="font-size: 32px; margin-bottom: 16px;">Excellence Without<br>the Struggle</h2>
+                            <p style="font-size: 14px;">Our expert team delivers top-quality property solutions that are fast, reliable, and fully managed.</p>
+                        </div>
+                        <div>
+                            <a href="quote.html" class="btn btn-primary">Book A Service Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="services-tid-grid reveal" style="transition-delay: 0.1s">
+                        <div class="s-tid-card">
+                            <div class="s-tid-img" style="background:url('assets/images/property_prep.jpg') center/cover;"></div>
+                            <div class="s-tid-title">01/ Property Preparation</div>
+                        </div>
+                        <div class="s-tid-card">
+                            <div class="s-tid-img" style="background:url('assets/images/contracting.jpg') center/cover;"></div>
+                            <div class="s-tid-title">02/ Contracting</div>
+                        </div>
+                        <div class="s-tid-card">
+                            <div class="s-tid-img" style="background:url('assets/images/commercial_cleaning.jpg') center/cover;"></div>
+                            <div class="s-tid-title">03/ Commercial Cleaning</div>
+                        </div>
+                        <div class="services-more-block">
+                            25+ Services You<br>Can Explore
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About/Mission -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="hero-layout hero-layout-responsive">
+                    <div class="hero-left reveal">
+                        <h2>Elevating Property<br>Excellence</h2>
+                        <p style="margin-bottom: 24px;">At New Nablis, we go beyond basic maintenance. Our mission is to bring you a higher standard of service, where attention to detail, reliability, and safety meet. With trained professionals and trusted methods, we turn everyday spaces into pristine environments.</p>
+                        <div style="display:flex; gap:16px;">
+                            <a href="quote.html" class="btn btn-primary">Book A Service Now</a>
+                            <a href="#" class="btn btn-secondary config-phone">Call</a>
+                        </div>
+                    </div>
+                    <div class="hero-right-text reveal" style="position:relative; transition-delay: 0.1s;">
+                        <div style="width:100%; height:300px; background:url('assets/images/contracting.jpg') center/cover; border-radius: var(--radius-md);"></div>
+                        <!-- Decorative spinning badge mimic -->
+                        <div style="position: absolute; bottom: -20px; left: -20px; width: 100px; height: 100px; background: var(--color-green); color: var(--color-text-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; text-align: center; font-weight: bold; padding: 10px;">
+                            Work With Us<br>Contact Us
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="section">
+            <div class="container">
+                <div style="display:flex; justify-content:space-between; align-items:flex-end;" class="reveal">
+                    <h2>Best Pricing Plan</h2>
+                    <div style="background:var(--color-background-alt); padding:4px; border-radius:var(--radius-full); display:inline-flex;">
+                        <span style="padding:8px 24px; background:var(--glass-bg); border: 1px solid var(--glass-border); color:var(--color-text-light); border-radius:var(--radius-full); font-size:14px; font-weight:600; backdrop-filter: blur(10px);">Residential</span>
+                        <span style="padding:8px 24px; font-size:14px; font-weight:600;">Business</span>
+                    </div>
+                </div>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card reveal" style="transition-delay: 0.1s">
+                        <h4>Basic Cleaning</h4>
+                        <div class="price-val">QAR 49<span style="font-size:14px; font-weight:400; color:var(--color-text-muted)">/Hour</span></div>
+                        <ul class="pricing-features">
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Standard Service</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Trained Staff</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Flexible Schedule</li>
+                        </ul>
+                        <a href="quote.html" class="btn btn-primary" style="width:100%">Choose Package</a>
+                    </div>
+                    
+                    <div class="pricing-card highlight reveal" style="transition-delay: 0.2s">
+                        <h4>Deep Cleaning</h4>
+                        <div class="price-val">QAR 69<span style="font-size:14px; font-weight:400; color: var(--color-text-muted);">/Hour</span></div>
+                        <ul class="pricing-features">
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Intensive Cleaning</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Professional Equipment</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Supervisor Included</li>
+                        </ul>
+                        <a href="quote.html" class="btn btn-primary" style="width:100%; border:none;">Choose Package</a>
+                    </div>
+                    
+                    <div class="pricing-card reveal" style="transition-delay: 0.3s">
+                        <h4>Contracting</h4>
+                        <div class="price-val">Quote</div>
+                        <ul class="pricing-features">
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom Project Plan</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Dedicated Project Manager</li>
+                            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Full Compliance</li>
+                        </ul>
+                        <a href="quote.html" class="btn btn-primary" style="width:100%">Get Estimate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="section section-light">
+            <div class="container text-center reveal">
+                <h2>Our Best Service<br>Experience</h2>
+                <div class="vid-section">
+                    <a href="#" class="btn-play" style="position:relative; z-index:2;">
+                        <svg viewBox="0 0 24 24" width="24" height="24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        
+
+<!-- CTA Section -->
+<section class="section" style="padding-top: 60px; padding-bottom: 80px;">
+    <div class="container reveal">
+        <div style="background: var(--glass-bg); backdrop-filter: blur(24px); border: 1px solid var(--glass-border); border-radius: 40px; padding: 48px; display: flex; justify-content: space-between; align-items: center; max-width: 900px; margin: 0 auto; position: relative; overflow: hidden; box-shadow: inset 0 4px 30px rgba(0,0,0,0.1), 0 20px 50px rgba(0,0,0,0.3); flex-wrap: wrap; gap: 40px;">
+            
+            <!-- Playful Confetti background elements -->
+            <div style="position: absolute; top: 30px; left: 300px; width: 14px; height: 14px; background: #FFB800; transform: rotate(15deg); opacity: 0.6; border-radius: 2px;"></div>
+            <div style="position: absolute; top: 70px; right: 280px; width: 16px; height: 8px; background: #3FA9F5; transform: rotate(-35deg); opacity: 0.8; border-radius: 2px;"></div>
+            <div style="position: absolute; bottom: 60px; right: 380px; width: 12px; height: 12px; background: var(--color-primary); opacity: 0.7; transform: rotate(25deg); border-radius: 2px;"></div>
+            <div style="position: absolute; bottom: 30px; left: 400px; width: 18px; height: 8px; background: #9D72FF; transform: rotate(-15deg); opacity: 0.8; border-radius: 2px;"></div>
+            <div style="position: absolute; top: 120px; right: 80px; width: 14px; height: 14px; background: var(--color-primary); opacity: 0.6; border-radius: 50%;"></div>
+            <div style="position: absolute; bottom: 100px; right: 20px; width: 12px; height: 24px; background: #3FA9F5; opacity: 0.5; transform: rotate(45deg); border-radius: 2px;"></div>
+
+            <div style="flex: 1; min-width: 300px; z-index: 2; text-align: left;">
+                <div style="display: inline-block; background: rgba(63, 169, 245, 0.15); color: #3FA9F5; font-weight: 800; font-size: 11px; letter-spacing: 1px; padding: 6px 12px; border-radius: 8px; margin-bottom: 24px; text-transform: uppercase; border: 1px solid rgba(63, 169, 245, 0.3);">
+                    Get Started
+                </div>
+                
+                <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
+                    <div style="width: 52px; height: 52px; background: linear-gradient(135deg, #3FA9F5, var(--color-primary)); border-radius: 14px; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 16px rgba(63, 169, 245, 0.3);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                    </div>
+                    <h2 style="font-size: 28px; margin: 0; color: var(--color-text-light);">Ready to start?</h2>
+                </div>
+                
+                <p style="color: var(--color-text-muted); font-size: 16px; line-height: 1.6; margin-bottom: 32px; max-width: 400px;">
+                    Get a free quote today and let New Nablis Cleaning and Contracting handle the hard work for your next project.
+                </p>
+                
+                <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                    <a href="quote.html" class="btn" style="background: #5B4DFF; color: var(--color-text-light); border: none; border-radius: 12px; padding: 14px 28px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; transition: 0.3s; box-shadow: 0 4px 15px rgba(91, 77, 255, 0.3);">
+                        Request a Service
+                    </a>
+                    <a href="contact.html" class="btn" style="background: rgba(255,255,255,0.1); color: var(--color-text-light); border: 1px solid var(--glass-border); border-radius: 12px; padding: 14px 28px; font-weight: 600; display: inline-flex; align-items: center; transition: 0.3s;">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+            
+            <div style="position: relative; z-index: 2; margin: 0 auto;">
+                <img src="assets/images/contracting.jpg" alt="Project" style="width: 180px; height: 180px; object-fit: cover; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.3); border: 2px solid rgba(255,255,255,0.1);">
+                <div style="position: absolute; bottom: -15px; left: -20px; background: rgba(40,40,45,0.9); backdrop-filter: blur(10px); border: 1px solid var(--glass-border); padding: 8px 16px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.3); font-weight: 700; font-size: 13px; color: var(--color-text-light); display: flex; align-items: center; gap: 6px;">
+                    <span style="color: #3FA9F5; font-size: 18px; line-height: 1;">?</span> Top Rated!
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <span style="font-weight:800;font-size:24px;color:var(--color-white);display:block;margin-bottom:24px;">New Nablis.</span>
+                    <p style="color: var(--color-text-muted)">New Nablis Cleaning and Contracting</p>
+                    <p style="color: var(--color-text-muted)">Professional property and workforce solutions in Doha, Qatar.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>SERVICES</h4>
+                    <ul class="footer-links">
+                        <li><a href="cleaning.html">Cleaning</a></li>
+                        <li><a href="property-preparation.html">Property Preparation</a></li>
+                        <li><a href="contracting.html">Contracting</a></li>
+                        <li><a href="staffing.html">Staffing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>COMPANY</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="quote.html">Request Quote</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACT</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="config-phone">Phone</a></li>
+                        <li><a href="#" class="config-whatsapp">WhatsApp</a></li>
+                        <li><a href="#" class="config-email">Email</a></li>
+                        <li style="color: var(--color-text-muted)">Doha, Qatar</li>
+                        <li style="color: var(--color-text-muted)">C.R. No. 231717</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; <span id="year"></span> New Nablis Cleaning and Contracting. All Rights Reserved.</div>
+                <div class="footer-legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/animations.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+    <!-- GSAP & Lenis for Premium Animations -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+<script src="js/i18n.js"></script>
+<div id="google_translate_element" style="display:none;"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: "en", includedLanguages: "en,ar,am", autoDisplay: false}, "google_translate_element");
+}
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
